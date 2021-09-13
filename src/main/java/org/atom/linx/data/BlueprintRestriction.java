@@ -1,6 +1,6 @@
 package org.atom.linx.data;
 
-public class BlueprintRestrictions {
+public class BlueprintRestriction {
     private boolean content;
     private boolean points;
     private boolean due_dates;

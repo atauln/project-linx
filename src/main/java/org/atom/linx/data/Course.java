@@ -13,7 +13,8 @@ class WikiPage{
 }
 
 class BlueprintRestrictionsByObjectType{
-    private Assignment assignment;    private WikiPage wiki_page;
+    private Assignment assignment;
+    private WikiPage wiki_page;
     public Assignment getAssignment() {
         return assignment;
     }
@@ -79,7 +80,7 @@ public class Course{
     private boolean access_restricted_by_date;
     private String time_zone;
     private boolean blueprint;
-    private BlueprintRestrictions blueprint_restrictions;
+    private BlueprintRestriction[] blueprint_restrictions;
     private BlueprintRestrictionsByObjectType blueprint_restrictions_by_object_type;
     private boolean template;
 
@@ -467,11 +468,11 @@ public class Course{
         this.blueprint = blueprint;
     }
 
-    public BlueprintRestrictions getBlueprintRestrictions() {
+    public BlueprintRestriction[] getBlueprintRestrictions() {
         return blueprint_restrictions;
     }
 
-    public void setBlueprintRestrictions(BlueprintRestrictions blueprint_restrictions) {
+    public void setBlueprintRestrictions(BlueprintRestriction[] blueprint_restrictions) {
         this.blueprint_restrictions = blueprint_restrictions;
     }
 
