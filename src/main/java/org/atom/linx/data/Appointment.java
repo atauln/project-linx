@@ -15,19 +15,19 @@ public class Appointment {
         this.id = id;
     }
 
-    public Date getStart_at() {
+    public Date getStartAt() {
         return start_at;
     }
 
-    public void setStart_at(Date start_at) {
+    public void setStartAt(Date start_at) {
         this.start_at = start_at;
     }
 
-    public Date getEnd_at() {
+    public Date getEndAt() {
         return end_at;
     }
 
-    public void setEnd_at(Date end_at) {
+    public void setEndAt(Date end_at) {
         this.end_at = end_at;
     }
 }

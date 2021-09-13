@@ -15,19 +15,19 @@ class ReservedTime {
         this.id = id;
     }
 
-    public Date getStart_at() {
+    public Date getStartAt() {
         return start_at;
     }
 
-    public void setStart_at(Date start_at) {
+    public void setStartAt(Date start_at) {
         this.start_at = start_at;
     }
 
-    public Date getEnd_at() {
+    public Date getEndAt() {
         return end_at;
     }
 
-    public void setEnd_at(Date end_at) {
+    public void setEndAt(Date end_at) {
         this.end_at = end_at;
     }
 }
@@ -75,19 +75,19 @@ public class AppointmentGroup {
         this.title = title;
     }
 
-    public Date getStart_at() {
+    public Date getStartAt() {
         return start_at;
     }
 
-    public void setStart_at(Date start_at) {
+    public void setStartAt(Date start_at) {
         this.start_at = start_at;
     }
 
-    public Date getEnd_at() {
+    public Date getEndAt() {
         return end_at;
     }
 
-    public void setEnd_at(Date end_at) {
+    public void setEndAt(Date end_at) {
         this.end_at = end_at;
     }
 
@@ -99,59 +99,59 @@ public class AppointmentGroup {
         this.description = description;
     }
 
-    public String getLocation_name() {
+    public String getLocationName() {
         return location_name;
     }
 
-    public void setLocation_name(String location_name) {
+    public void setLocationName(String location_name) {
         this.location_name = location_name;
     }
 
-    public String getLocation_address() {
+    public String getLocationAddress() {
         return location_address;
     }
 
-    public void setLocation_address(String location_address) {
+    public void setLocationAddress(String location_address) {
         this.location_address = location_address;
     }
 
-    public int getParticipant_count() {
+    public int getParticipantCount() {
         return participant_count;
     }
 
-    public void setParticipant_count(int participant_count) {
+    public void setParticipantCount(int participant_count) {
         this.participant_count = participant_count;
     }
 
-    public ReservedTime[] getReserved_times() {
+    public ReservedTime[] getReservedTimes() {
         return reserved_times;
     }
 
-    public void setReserved_times(ReservedTime[] reserved_times) {
+    public void setReservedTimes(ReservedTime[] reserved_times) {
         this.reserved_times = reserved_times;
     }
 
-    public String[] getContext_codes() {
+    public String[] getContextCodes() {
         return context_codes;
     }
 
-    public void setContext_codes(String[] context_codes) {
+    public void setContextCodes(String[] context_codes) {
         this.context_codes = context_codes;
     }
 
-    public String[] getSub_context_codes() {
+    public String[] getSubContextCodes() {
         return sub_context_codes;
     }
 
-    public void setSub_context_codes(String[] sub_context_codes) {
+    public void setSubContextCodes(String[] sub_context_codes) {
         this.sub_context_codes = sub_context_codes;
     }
 
-    public String getWorkflow_state() {
+    public String getWorkflowState() {
         return workflow_state;
     }
 
-    public void setWorkflow_state(String workflow_state) {
+    public void setWorkflowState(String workflow_state) {
         this.workflow_state = workflow_state;
     }
 
@@ -159,15 +159,15 @@ public class AppointmentGroup {
         return requiring_action;
     }
 
-    public void setRequiring_action(boolean requiring_action) {
+    public void setRequiringAction(boolean requiring_action) {
         this.requiring_action = requiring_action;
     }
 
-    public int getAppointments_count() {
+    public int getAppointmentsCount() {
         return appointments_count;
     }
 
-    public void setAppointments_count(int appointments_count) {
+    public void setAppointmentsCount(int appointments_count) {
         this.appointments_count = appointments_count;
     }
 
@@ -179,51 +179,51 @@ public class AppointmentGroup {
         this.appointments = appointments;
     }
 
-    public Appointment[] getNew_appointments() {
+    public Appointment[] getNewAppointments() {
         return new_appointments;
     }
 
-    public void setNew_appointments(Appointment[] new_appointments) {
+    public void setNewAppointments(Appointment[] new_appointments) {
         this.new_appointments = new_appointments;
     }
 
-    public int getMax_appointments_per_participant() {
+    public int getMaxAppointmentsPerParticipant() {
         return max_appointments_per_participant;
     }
 
-    public void setMax_appointments_per_participant(int max_appointments_per_participant) {
+    public void setMaxAppointmentsPerParticipant(int max_appointments_per_participant) {
         this.max_appointments_per_participant = max_appointments_per_participant;
     }
 
-    public int getMin_appointments_per_participant() {
+    public int getMinAppointmentsPerParticipant() {
         return min_appointments_per_participant;
     }
 
-    public void setMin_appointments_per_participant(int min_appointments_per_participant) {
+    public void setMinAppointmentsPerParticipant(int min_appointments_per_participant) {
         this.min_appointments_per_participant = min_appointments_per_participant;
     }
 
-    public int getParticipants_per_appointment() {
+    public int getParticipantsPerAppointment() {
         return participants_per_appointment;
     }
 
-    public void setParticipants_per_appointment(int participants_per_appointment) {
+    public void setParticipantsPerAppointment(int participants_per_appointment) {
         this.participants_per_appointment = participants_per_appointment;
     }
 
-    public String getParticipant_visibility() {
+    public String getParticipantVisibility() {
         return participant_visibility;
     }
 
-    public void setParticipant_visibility(String participant_visibility) {
+    public void setParticipantVisibility(String participant_visibility) {
         this.participant_visibility = participant_visibility;
     }
 
-    public String getParticipant_type() {
+    public String getParticipantType() {
         return participant_type;
     }
 
-    public void setParticipant_type(String participant_type) {
+    public void setParticipantType(String participant_type) {
         this.participant_type = participant_type;
     }
 
@@ -235,27 +235,27 @@ public class AppointmentGroup {
         this.url = url;
     }
 
-    public String getHtml_url() {
+    public String getHtmlUrl() {
         return html_url;
     }
 
-    public void setHtml_url(String html_url) {
+    public void setHtmlUrl(String html_url) {
         this.html_url = html_url;
     }
 
-    public Date getCreated_at() {
+    public Date getCreatedAt() {
         return created_at;
     }
 
-    public void setCreated_at(Date created_at) {
+    public void setCreatedAt(Date created_at) {
         this.created_at = created_at;
     }
 
-    public Date getUpdated_at() {
+    public Date getUpdatedAt() {
         return updated_at;
     }
 
-    public void setUpdated_at(Date updated_at) {
+    public void setUpdatedAt(Date updated_at) {
         this.updated_at = updated_at;
     }
 }
