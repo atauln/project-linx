@@ -1,41 +1,222 @@
 package org.atom.linx.data;
 
-import java.util.List;
+import java.util.Date;
 
-class Needs_grading_count_by_section {
+class LockInfo {
+    private String asset_string;
+    private Date unlock_at;
+    private Date lock_at;
+    private String context_module;
+    private boolean manually_locked;
+
+    public String getAssetString() {
+        return asset_string;
+    }
+
+    public void setAssetString(String asset_string) {
+        this.asset_string = asset_string;
+    }
+
+    public Date getUnlockAt() {
+        return unlock_at;
+    }
+
+    public void setUnlockAt(Date unlock_at) {
+        this.unlock_at = unlock_at;
+    }
+
+    public Date getLockAt() {
+        return lock_at;
+    }
+
+    public void setLockAt(Date lock_at) {
+        this.lock_at = lock_at;
+    }
+
+    public String getContextModule() {
+        return context_module;
+    }
+
+    public void setContextModule(String context_module) {
+        this.context_module = context_module;
+    }
+
+    public boolean isManuallyLocked() {
+        return manually_locked;
+    }
+
+    public void setManuallyLocked(boolean manually_locked) {
+        this.manually_locked = manually_locked;
+    }
+}
+
+class ExternalToolTagAttributes {
+    private String url;
+    private boolean new_tab;
+    private String resource_link_id;
+
+    public String getUrl() {
+        return url;
+    }
+
+    public void setUrl(String url) {
+        this.url = url;
+    }
+
+    public boolean isNewTab() {
+        return new_tab;
+    }
+
+    public void setNewTab(boolean new_tab) {
+        this.new_tab = new_tab;
+    }
+
+    public String getResourceLinkId() {
+        return resource_link_id;
+    }
+
+    public void setResourceLinkId(String resource_link_id) {
+        this.resource_link_id = resource_link_id;
+    }
+}
+
+class ScoreStatistic {
+    private int max;
+    private int mean;
+    private int min;
+
+    public int getMax() {
+        return max;
+    }
+
+    public void setMax(int max) {
+        this.max = max;
+    }
+
+    public int getMean() {
+        return mean;
+    }
+
+    public void setMean(int mean) {
+        this.mean = mean;
+    }
+
+    public int getMin() {
+        return min;
+    }
+
+    public void setMin(int min) {
+        this.min = min;
+    }
+}
+
+class TurnitinSettings {
+    private String originality_report_visibility;
+    private boolean s_paper_check;
+    private boolean internet_check;
+    private boolean journal_check;
+    private boolean exclude_biblio;
+    private boolean exclude_quoted;
+    private String exclude_small_matches_type;
+    private int exclude_small_matches_value;
+
+    public String getOriginalityReportVisibility() {
+        return originality_report_visibility;
+    }
+
+    public void setOriginalityReportVisibility(String originality_report_visibility) {
+        this.originality_report_visibility = originality_report_visibility;
+    }
+
+    public boolean isSPaperCheck() {
+        return s_paper_check;
+    }
+
+    public void setSPaperCheck(boolean s_paper_check) {
+        this.s_paper_check = s_paper_check;
+    }
+
+    public boolean isInternetCheck() {
+        return internet_check;
+    }
+
+    public void setInternetCheck(boolean internet_check) {
+        this.internet_check = internet_check;
+    }
+
+    public boolean isJournalCheck() {
+        return journal_check;
+    }
+
+    public void setJournalCheck(boolean journal_check) {
+        this.journal_check = journal_check;
+    }
+
+    public boolean isExcludeBiblio() {
+        return exclude_biblio;
+    }
+
+    public void setExcludeBiblio(boolean exclude_biblio) {
+        this.exclude_biblio = exclude_biblio;
+    }
+
+    public boolean isExcludeQuoted() {
+        return exclude_quoted;
+    }
+
+    public void setExcludeQuoted(boolean exclude_quoted) {
+        this.exclude_quoted = exclude_quoted;
+    }
+
+    public String getExcludeSmallMatchesType() {
+        return exclude_small_matches_type;
+    }
+
+    public void setExcludeSmallMatchesType(String exclude_small_matches_type) {
+        this.exclude_small_matches_type = exclude_small_matches_type;
+    }
+
+    public int getExcludeSmallMatchesValue() {
+        return exclude_small_matches_value;
+    }
+
+    public void setExcludeSmallMatchesValue(int exclude_small_matches_value) {
+        this.exclude_small_matches_value = exclude_small_matches_value;
+    }
+}
+
+class NeedsGradingCountBySection{
     private String section_id;
     private int needs_grading_count;
 
-    public void setSectionId(String section_id){
+    public String getSectionId() {
+        return section_id;
+    }
+
+    public void setSectionId(String section_id) {
         this.section_id = section_id;
     }
 
-    public String getSectionId(){
-        return this.section_id;
+    public int getNeedsGradingCount() {
+        return needs_grading_count;
     }
 
-    public void setNeedsGradingCount(int needs_grading_count){
+    public void setNeedsGradingCount(int needs_grading_count) {
         this.needs_grading_count = needs_grading_count;
-    }
-
-    public int getNeedsGradingCount(){
-        return this.needs_grading_count;
     }
 }
 
 public class Assignment {
-    private boolean content;
-    private boolean points;
     private int id;
     private String name;
     private String description;
-    private String created_at;
-    private String updated_at;
-    private String due_at;
-    private String lock_at;
-    private String unlock_at;
+    private Date created_at;
+    private Date updated_at;
+    private Date due_at;
+    private Date lock_at;
+    private Date unlock_at;
     private boolean has_overrides;
-    private String all_dates;
+    private Object all_dates;
     private int course_id;
     private String html_url;
     private String submissions_download_url;
@@ -45,42 +226,44 @@ public class Assignment {
     private int max_name_length;
     private boolean turnitin_enabled;
     private boolean vericite_enabled;
-    private String turnitin_settings;
+    private TurnitinSettings turnitin_settings;
     private boolean grade_group_students_individually;
-    private String external_tool_tag_attributes;
+    private ExternalToolTagAttributes external_tool_tag_attributes;
     private boolean peer_reviews;
     private boolean automatic_peer_reviews;
     private int peer_review_count;
-    private String peer_reviews_assign_at;
+    private Date peer_reviews_assign_at;
     private boolean intra_group_peer_reviews;
     private int group_category_id;
     private int needs_grading_count;
-    private Needs_grading_count_by_section[] needs_grading_count_by_section;
+    private NeedsGradingCountBySection[] needs_grading_count_by_section;
     private int position;
     private boolean post_to_sis;
     private String integration_id;
-    private int points_possible;
+    private Object integration_data;
+    private double points_possible;
     private String[] submission_types;
     private boolean has_submitted_submissions;
     private String grading_type;
-    private String grading_standard_id;
+    private Object grading_standard_id;
     private boolean published;
     private boolean unpublishable;
     private boolean only_visible_to_overrides;
     private boolean locked_for_user;
-    private String lock_info;
+    private LockInfo lock_info;
     private String lock_explanation;
     private int quiz_id;
     private boolean anonymous_submissions;
-    private String discussion_topic;
+    private DiscussionTopic discussion_topic;
     private boolean freeze_on_copy;
     private boolean frozen;
     private String[] frozen_attributes;
-    private String submission;
+    private Object submission; //TODO submission object
     private boolean use_rubric_for_grading;
-    private String rubric;
+    private String rubric_settings;
+    private Object rubric; //TODO rubric object
     private int[] assignment_visibility;
-    private String overrides;
+    private AssignmentOverride[] overrides;
     private boolean omit_from_final_grade;
     private boolean moderated_grading;
     private int grader_count;
@@ -91,24 +274,8 @@ public class Assignment {
     private boolean anonymous_grading;
     private int allowed_attempts;
     private boolean post_manually;
-    private String score_statistics;
+    private ScoreStatistic score_statistics;
     private boolean can_submit;
-
-    public boolean isContent() {
-        return content;
-    }
-
-    public void setContent(boolean content) {
-        this.content = content;
-    }
-
-    public boolean isPoints() {
-        return points;
-    }
-
-    public void setPoints(boolean points) {
-        this.points = points;
-    }
 
     public int getId() {
         return id;
@@ -134,43 +301,43 @@ public class Assignment {
         this.description = description;
     }
 
-    public String getCreatedAt() {
+    public Date getCreatedAt() {
         return created_at;
     }
 
-    public void setCreatedAt(String created_at) {
+    public void setCreatedAt(Date created_at) {
         this.created_at = created_at;
     }
 
-    public String getUpdatedAt() {
+    public Date getUpdatedAt() {
         return updated_at;
     }
 
-    public void setUpdatedAt(String updated_at) {
+    public void setUpdatedAt(Date updated_at) {
         this.updated_at = updated_at;
     }
 
-    public String getDueAt() {
+    public Date getDueAt() {
         return due_at;
     }
 
-    public void setDueAt(String due_at) {
+    public void setDueAt(Date due_at) {
         this.due_at = due_at;
     }
 
-    public String getLockAt() {
+    public Date getLockAt() {
         return lock_at;
     }
 
-    public void setLockAt(String lock_at) {
+    public void setLockAt(Date lock_at) {
         this.lock_at = lock_at;
     }
 
-    public String getUnlockAt() {
+    public Date getUnlockAt() {
         return unlock_at;
     }
 
-    public void setUnlockAt(String unlock_at) {
+    public void setUnlockAt(Date unlock_at) {
         this.unlock_at = unlock_at;
     }
 
@@ -182,11 +349,11 @@ public class Assignment {
         this.has_overrides = has_overrides;
     }
 
-    public String getAllDates() {
+    public Object getAllDates() {
         return all_dates;
     }
 
-    public void setAllDates(String all_dates) {
+    public void setAllDates(Object all_dates) {
         this.all_dates = all_dates;
     }
 
@@ -262,11 +429,11 @@ public class Assignment {
         this.vericite_enabled = vericite_enabled;
     }
 
-    public String getTurnitinSettings() {
+    public TurnitinSettings getTurnitinSettings() {
         return turnitin_settings;
     }
 
-    public void setTurnitinSettings(String turnitin_settings) {
+    public void setTurnitinSettings(TurnitinSettings turnitin_settings) {
         this.turnitin_settings = turnitin_settings;
     }
 
@@ -278,11 +445,11 @@ public class Assignment {
         this.grade_group_students_individually = grade_group_students_individually;
     }
 
-    public String getExternalToolTagAttributes() {
+    public ExternalToolTagAttributes getExternalToolTagAttributes() {
         return external_tool_tag_attributes;
     }
 
-    public void setExternalToolTagAttributes(String external_tool_tag_attributes) {
+    public void setExternalToolTagAttributes(ExternalToolTagAttributes external_tool_tag_attributes) {
         this.external_tool_tag_attributes = external_tool_tag_attributes;
     }
 
@@ -310,11 +477,11 @@ public class Assignment {
         this.peer_review_count = peer_review_count;
     }
 
-    public String getPeerReviewsAssignAt() {
+    public Date getPeerReviewsAssignAt() {
         return peer_reviews_assign_at;
     }
 
-    public void setPeerReviewsAssignAt(String peer_reviews_assign_at) {
+    public void setPeerReviewsAssignAt(Date peer_reviews_assign_at) {
         this.peer_reviews_assign_at = peer_reviews_assign_at;
     }
 
@@ -342,11 +509,11 @@ public class Assignment {
         this.needs_grading_count = needs_grading_count;
     }
 
-    public Needs_grading_count_by_section[] getNeedsGradingCountBySection() {
+    public NeedsGradingCountBySection[] getNeedsGradingCountBySection() {
         return needs_grading_count_by_section;
     }
 
-    public void setNeedsGradingCountBySection(Needs_grading_count_by_section[] needs_grading_count_by_section) {
+    public void setNeedsGradingCountBySection(NeedsGradingCountBySection[] needs_grading_count_by_section) {
         this.needs_grading_count_by_section = needs_grading_count_by_section;
     }
 
@@ -374,11 +541,19 @@ public class Assignment {
         this.integration_id = integration_id;
     }
 
-    public int getPointsPossible() {
+    public Object getIntegrationData() {
+        return integration_data;
+    }
+
+    public void setIntegrationData(Object integration_data) {
+        this.integration_data = integration_data;
+    }
+
+    public double getPointsPossible() {
         return points_possible;
     }
 
-    public void setPointsPossible(int points_possible) {
+    public void setPointsPossible(double points_possible) {
         this.points_possible = points_possible;
     }
 
@@ -406,11 +581,11 @@ public class Assignment {
         this.grading_type = grading_type;
     }
 
-    public String getGradingStandardId() {
+    public Object getGradingStandardId() {
         return grading_standard_id;
     }
 
-    public void setGradingStandardId(String grading_standard_id) {
+    public void setGradingStandardId(Object grading_standard_id) {
         this.grading_standard_id = grading_standard_id;
     }
 
@@ -446,11 +621,11 @@ public class Assignment {
         this.locked_for_user = locked_for_user;
     }
 
-    public String getLockInfo() {
+    public LockInfo getLockInfo() {
         return lock_info;
     }
 
-    public void setLockInfo(String lock_info) {
+    public void setLockInfo(LockInfo lock_info) {
         this.lock_info = lock_info;
     }
 
@@ -478,11 +653,11 @@ public class Assignment {
         this.anonymous_submissions = anonymous_submissions;
     }
 
-    public String getDiscussionTopic() {
+    public DiscussionTopic getDiscussionTopic() {
         return discussion_topic;
     }
 
-    public void setDiscussionTopic(String discussion_topic) {
+    public void setDiscussionTopic(DiscussionTopic discussion_topic) {
         this.discussion_topic = discussion_topic;
     }
 
@@ -510,11 +685,11 @@ public class Assignment {
         this.frozen_attributes = frozen_attributes;
     }
 
-    public String getSubmission() {
+    public Object getSubmission() {
         return submission;
     }
 
-    public void setSubmission(String submission) {
+    public void setSubmission(Object submission) {
         this.submission = submission;
     }
 
@@ -526,11 +701,19 @@ public class Assignment {
         this.use_rubric_for_grading = use_rubric_for_grading;
     }
 
-    public String getRubric() {
+    public String getRubricSettings() {
+        return rubric_settings;
+    }
+
+    public void setRubricSettings(String rubric_settings) {
+        this.rubric_settings = rubric_settings;
+    }
+
+    public Object getRubric() {
         return rubric;
     }
 
-    public void setRubric(String rubric) {
+    public void setRubric(Object rubric) {
         this.rubric = rubric;
     }
 
@@ -542,11 +725,11 @@ public class Assignment {
         this.assignment_visibility = assignment_visibility;
     }
 
-    public String getOverrides() {
+    public AssignmentOverride[] getOverrides() {
         return overrides;
     }
 
-    public void setOverrides(String overrides) {
+    public void setOverrides(AssignmentOverride[] overrides) {
         this.overrides = overrides;
     }
 
@@ -630,11 +813,11 @@ public class Assignment {
         this.post_manually = post_manually;
     }
 
-    public String getScoreStatistics() {
+    public ScoreStatistic getScoreStatistics() {
         return score_statistics;
     }
 
-    public void setScoreStatistics(String score_statistics) {
+    public void setScoreStatistics(ScoreStatistic score_statistics) {
         this.score_statistics = score_statistics;
     }
 
