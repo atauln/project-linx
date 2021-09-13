@@ -8,11 +8,6 @@ import org.atom.linx.data.AssignmentOverride;
 public class AssignmentManager {
     //TODO DELETE /api/v1/courses/:course_id/assignments/:id
 
-    /**
-     * Lists the assignments in a specified course
-     * @param course_id Course identification number
-     * @return
-     */
     public static Assignment[] listAssignments(int course_id) {
         String r = APIManager.GET("/api/v1/course/" + course_id + "/assignments", new RequestMap());
         return new Gson().fromJson(r, Assignment[].class);
