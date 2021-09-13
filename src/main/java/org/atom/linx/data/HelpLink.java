@@ -11,11 +11,11 @@ public class HelpLink {
     public boolean is_new;
     public String feature_headline;
 
-    public String[] getAvailable_to() {
+    public String[] getAvailableTo() {
         return available_to;
     }
 
-    public void setAvailable_to(String[] available_to) {
+    public void setAvailableTo(String[] available_to) {
         this.available_to = available_to;
     }
 
@@ -59,27 +59,27 @@ public class HelpLink {
         this.id = id;
     }
 
-    public boolean isIs_featured() {
+    public boolean isIsFeatured() {
         return is_featured;
     }
 
-    public void setIs_featured(boolean is_featured) {
+    public void setIsFeatured(boolean is_featured) {
         this.is_featured = is_featured;
     }
 
-    public boolean isIs_new() {
+    public boolean isIsNew() {
         return is_new;
     }
 
-    public void setIs_new(boolean is_new) {
+    public void setIsNew(boolean is_new) {
         this.is_new = is_new;
     }
 
-    public String getFeature_headline() {
+    public String getFeatureHeadline() {
         return feature_headline;
     }
 
-    public void setFeature_headline(String feature_headline) {
+    public void setFeatureHeadline(String feature_headline) {
         this.feature_headline = feature_headline;
     }
 }

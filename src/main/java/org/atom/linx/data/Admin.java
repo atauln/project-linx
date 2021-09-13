@@ -30,11 +30,11 @@ public class Admin {
         this.user = user;
     }
 
-    public String getWorkflow_state() {
+    public String getWorkflowState() {
         return workflow_state;
     }
 
-    public void setWorkflow_state(String workflow_state) {
+    public void setWorkflowState(String workflow_state) {
         this.workflow_state = workflow_state;
     }
 }

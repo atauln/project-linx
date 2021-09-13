@@ -12,19 +12,19 @@ public class Permissions {
         this.attach = attach;
     }
 
-    public boolean isCreate_discussion_topic() {
+    public boolean isCreateDiscussionTopic() {
         return create_discussion_topic;
     }
 
-    public void setCreate_discussion_topic(boolean create_discussion_topic) {
+    public void setCreateDiscussionTopic(boolean create_discussion_topic) {
         this.create_discussion_topic = create_discussion_topic;
     }
 
-    public boolean isCreate_announcement() {
+    public boolean isCreateAnnouncement() {
         return create_announcement;
     }
 
-    public void setCreate_announcement(boolean create_announcement) {
+    public void setCreateAnnouncement(boolean create_announcement) {
         this.create_announcement = create_announcement;
     }
 }

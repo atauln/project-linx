@@ -16,11 +16,11 @@ public class TermsOfService {
         this.id = id;
     }
 
-    public String getTerms_type() {
+    public String getTermsType() {
         return terms_type;
     }
 
-    public void setTerms_type(String terms_type) {
+    public void setTermsType(String terms_type) {
         this.terms_type = terms_type;
     }
 
@@ -32,11 +32,11 @@ public class TermsOfService {
         this.passive = passive;
     }
 
-    public int getAccount_id() {
+    public int getAccountId() {
         return account_id;
     }
 
-    public void setAccount_id(int account_id) {
+    public void setAccountId(int account_id) {
         this.account_id = account_id;
     }
 
@@ -48,11 +48,11 @@ public class TermsOfService {
         this.content = content;
     }
 
-    public String[] getSelf_registration_type() {
+    public String[] getSelfRegistrationType() {
         return self_registration_type;
     }
 
-    public void setSelf_registration_type(String[] self_registration_type) {
+    public void setSelfRegistrationType(String[] self_registration_type) {
         this.self_registration_type = self_registration_type;
     }
 }

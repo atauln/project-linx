@@ -30,11 +30,11 @@ public class AccountDomain {
         this.distance = distance;
     }
 
-    public String getAuthentication_provider() {
+    public String getAuthenticationProvider() {
         return authentication_provider;
     }
 
-    public void setAuthentication_provider(String authentication_provider) {
+    public void setAuthenticationProvider(String authentication_provider) {
         this.authentication_provider = authentication_provider;
     }
 }

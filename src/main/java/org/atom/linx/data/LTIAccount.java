@@ -32,27 +32,27 @@ public class LTIAccount {
         this.uuid = uuid;
     }
 
-    public int getParent_account_id() {
+    public int getParentAccountId() {
         return parent_account_id;
     }
 
-    public void setParent_account_id(int parent_account_id) {
+    public void setParentAccountId(int parent_account_id) {
         this.parent_account_id = parent_account_id;
     }
 
-    public int getRoot_account_id() {
+    public int getRootAccountId() {
         return root_account_id;
     }
 
-    public void setRoot_account_id(int root_account_id) {
+    public void setRootAccountId(int root_account_id) {
         this.root_account_id = root_account_id;
     }
 
-    public String getWorkflow_state() {
+    public String getWorkflowState() {
         return workflow_state;
     }
 
-    public void setWorkflow_state(String workflow_state) {
+    public void setWorkflowState(String workflow_state) {
         this.workflow_state = workflow_state;
     }
 }

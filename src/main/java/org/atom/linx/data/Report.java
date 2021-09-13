@@ -22,27 +22,27 @@ class ReportParameters {
     public Date start_at;
     public Date end_at;
 
-    public int getEnrollment_term_id() {
+    public int getEnrollmentTermId() {
         return enrollment_term_id;
     }
 
-    public void setEnrollment_term_id(int enrollment_term_id) {
+    public void setEnrollmentTermId(int enrollment_term_id) {
         this.enrollment_term_id = enrollment_term_id;
     }
 
-    public boolean isInclude_deleted() {
+    public boolean isIncludeDeleted() {
         return include_deleted;
     }
 
-    public void setInclude_deleted(boolean include_deleted) {
+    public void setIncludeDeleted(boolean include_deleted) {
         this.include_deleted = include_deleted;
     }
 
-    public int getCourse_id() {
+    public int getCourseId() {
         return course_id;
     }
 
-    public void setCourse_id(int course_id) {
+    public void setCourseId(int course_id) {
         this.course_id = course_id;
     }
 
@@ -118,51 +118,51 @@ class ReportParameters {
         this.xlist = xlist;
     }
 
-    public int getSis_terms_csv() {
+    public int getSisTermsCsv() {
         return sis_terms_csv;
     }
 
-    public void setSis_terms_csv(int sis_terms_csv) {
+    public void setSisTermsCsv(int sis_terms_csv) {
         this.sis_terms_csv = sis_terms_csv;
     }
 
-    public int getSis_accounts_csv() {
+    public int getSisAccountsCsv() {
         return sis_accounts_csv;
     }
 
-    public void setSis_accounts_csv(int sis_accounts_csv) {
+    public void setSisAccountsCsv(int sis_accounts_csv) {
         this.sis_accounts_csv = sis_accounts_csv;
     }
 
-    public boolean isInclude_enrollment_state() {
+    public boolean isIncludeEnrollmentState() {
         return include_enrollment_state;
     }
 
-    public void setInclude_enrollment_state(boolean include_enrollment_state) {
+    public void setIncludeEnrollmentState(boolean include_enrollment_state) {
         this.include_enrollment_state = include_enrollment_state;
     }
 
-    public String[] getEnrollment_state() {
+    public String[] getEnrollmentState() {
         return enrollment_state;
     }
 
-    public void setEnrollment_state(String[] enrollment_state) {
+    public void setEnrollmentState(String[] enrollment_state) {
         this.enrollment_state = enrollment_state;
     }
 
-    public Date getStart_at() {
+    public Date getStartAt() {
         return start_at;
     }
 
-    public void setStart_at(Date start_at) {
+    public void setStartAt(Date start_at) {
         this.start_at = start_at;
     }
 
-    public Date getEnd_at() {
+    public Date getEndAt() {
         return end_at;
     }
 
-    public void setEnd_at(Date end_at) {
+    public void setEndAt(Date end_at) {
         this.end_at = end_at;
     }
 }
@@ -196,11 +196,11 @@ public class Report {
         this.report = report;
     }
 
-    public String getFile_url() {
+    public String getFileUrl() {
         return file_url;
     }
 
-    public void setFile_url(String file_url) {
+    public void setFileUrl(String file_url) {
         this.file_url = file_url;
     }
 
@@ -220,27 +220,27 @@ public class Report {
         this.status = status;
     }
 
-    public Date getCreated_at() {
+    public Date getCreatedAt() {
         return created_at;
     }
 
-    public void setCreated_at(Date created_at) {
+    public void setCreatedAt(Date created_at) {
         this.created_at = created_at;
     }
 
-    public Date getStarted_at() {
+    public Date getStartedAt() {
         return started_at;
     }
 
-    public void setStarted_at(Date started_at) {
+    public void setStartedAt(Date started_at) {
         this.started_at = started_at;
     }
 
-    public Date getEnded_at() {
+    public Date getEndedAt() {
         return ended_at;
     }
 
-    public void setEnded_at(Date ended_at) {
+    public void setEndedAt(Date ended_at) {
         this.ended_at = ended_at;
     }
 
@@ -260,11 +260,11 @@ public class Report {
         this.progress = progress;
     }
 
-    public int getCurrent_line() {
+    public int getCurrentLine() {
         return current_line;
     }
 
-    public void setCurrent_line(int current_line) {
+    public void setCurrentLine(int current_line) {
         this.current_line = current_line;
     }
 }

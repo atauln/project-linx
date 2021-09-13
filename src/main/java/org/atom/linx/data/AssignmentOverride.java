@@ -23,35 +23,35 @@ public class AssignmentOverride {
         this.id = id;
     }
 
-    public int getAssignment_id() {
+    public int getAssignmentId() {
         return assignment_id;
     }
 
-    public void setAssignment_id(int assignment_id) {
+    public void setAssignmentId(int assignment_id) {
         this.assignment_id = assignment_id;
     }
 
-    public int[] getStudent_ids() {
+    public int[] getStudentIds() {
         return student_ids;
     }
 
-    public void setStudent_ids(int[] student_ids) {
+    public void setStudentIds(int[] student_ids) {
         this.student_ids = student_ids;
     }
 
-    public int getGroup_id() {
+    public int getGroupId() {
         return group_id;
     }
 
-    public void setGroup_id(int group_id) {
+    public void setGroupId(int group_id) {
         this.group_id = group_id;
     }
 
-    public int getCourse_section_id() {
+    public int getCourseSectionId() {
         return course_section_id;
     }
 
-    public void setCourse_section_id(int course_section_id) {
+    public void setCourseSectionId(int course_section_id) {
         this.course_section_id = course_section_id;
     }
 
@@ -63,43 +63,43 @@ public class AssignmentOverride {
         this.title = title;
     }
 
-    public Date getDue_at() {
+    public Date getDueAt() {
         return due_at;
     }
 
-    public void setDue_at(Date due_at) {
+    public void setDueAt(Date due_at) {
         this.due_at = due_at;
     }
 
-    public boolean isAll_day() {
+    public boolean isAllDay() {
         return all_day;
     }
 
-    public void setAll_day(boolean all_day) {
+    public void setAllDay(boolean all_day) {
         this.all_day = all_day;
     }
 
-    public String getAll_day_date() {
+    public String getAllDayDate() {
         return all_day_date;
     }
 
-    public void setAll_day_date(String all_day_date) {
+    public void setAllDayDate(String all_day_date) {
         this.all_day_date = all_day_date;
     }
 
-    public Date getUnlock_at() {
+    public Date getUnlockAt() {
         return unlock_at;
     }
 
-    public void setUnlock_at(Date unlock_at) {
+    public void setUnlockAt(Date unlock_at) {
         this.unlock_at = unlock_at;
     }
 
-    public Date getLock_at() {
+    public Date getLockAt() {
         return lock_at;
     }
 
-    public void setLock_at(Date lock_at) {
+    public void setLockAt(Date lock_at) {
         this.lock_at = lock_at;
     }
 }

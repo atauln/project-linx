@@ -59,11 +59,11 @@ public class AccountNotification {
         this.roles = roles;
     }
 
-    public int[] getRole_ids() {
+    public int[] getRoleIds() {
         return role_ids;
     }
 
-    public void setRole_ids(int[] role_ids) {
+    public void setRoleIds(int[] role_ids) {
         this.role_ids = role_ids;
     }
 }

@@ -9,7 +9,7 @@ public class User {
     private String integration_id;
     private String login_id;
     private String avatar_url;
-    private Object enrollments;
+    private Enrollment[] enrollments;
     private String email;
     private String locale;
     private String last_login;
@@ -34,67 +34,67 @@ public class User {
         this.name = name;
     }
 
-    public String getSortable_name() {
+    public String getSortableName() {
         return sortable_name;
     }
 
-    public void setSortable_name(String sortable_name) {
+    public void setSortableName(String sortable_name) {
         this.sortable_name = sortable_name;
     }
 
-    public String getShort_name() {
+    public String getShortName() {
         return short_name;
     }
 
-    public void setShort_name(String short_name) {
+    public void setShortName(String short_name) {
         this.short_name = short_name;
     }
 
-    public String getSis_user_id() {
+    public String getSisUserId() {
         return sis_user_id;
     }
 
-    public void setSis_user_id(String sis_user_id) {
+    public void setSisUserId(String sis_user_id) {
         this.sis_user_id = sis_user_id;
     }
 
-    public Integer getSis_import_id() {
+    public Integer getSisImportId() {
         return sis_import_id;
     }
 
-    public void setSis_import_id(Integer sis_import_id) {
+    public void setSisImportId(Integer sis_import_id) {
         this.sis_import_id = sis_import_id;
     }
 
-    public String getIntegration_id() {
+    public String getIntegrationId() {
         return integration_id;
     }
 
-    public void setIntegration_id(String integration_id) {
+    public void setIntegrationId(String integration_id) {
         this.integration_id = integration_id;
     }
 
-    public String getLogin_id() {
+    public String getLoginId() {
         return login_id;
     }
 
-    public void setLogin_id(String login_id) {
+    public void setLoginId(String login_id) {
         this.login_id = login_id;
     }
 
-    public String getAvatar_url() {
+    public String getAvatarUrl() {
         return avatar_url;
     }
 
-    public void setAvatar_url(String avatar_url) {
+    public void setAvatarUrl(String avatar_url) {
         this.avatar_url = avatar_url;
     }
 
-    public Object getEnrollments() {
+    public Enrollment[] getEnrollments() {
         return enrollments;
     }
 
-    public void setEnrollments(Object enrollments) {
+    public void setEnrollments(Enrollment[] enrollments) {
         this.enrollments = enrollments;
     }
 
@@ -114,19 +114,19 @@ public class User {
         this.locale = locale;
     }
 
-    public String getLast_login() {
+    public String getLastLogin() {
         return last_login;
     }
 
-    public void setLast_login(String last_login) {
+    public void setLastLogin(String last_login) {
         this.last_login = last_login;
     }
 
-    public String getTime_zone() {
+    public String getTimeZone() {
         return time_zone;
     }
 
-    public void setTime_zone(String time_zone) {
+    public void setTimeZone(String time_zone) {
         this.time_zone = time_zone;
     }
 

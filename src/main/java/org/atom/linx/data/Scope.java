@@ -16,11 +16,11 @@ public class Scope {
         this.resource = resource;
     }
 
-    public String getResource_name() {
+    public String getResourceName() {
         return resource_name;
     }
 
-    public void setResource_name(String resource_name) {
+    public void setResourceName(String resource_name) {
         this.resource_name = resource_name;
     }
 

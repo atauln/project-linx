@@ -6,19 +6,19 @@ class Needs_grading_count_by_section {
     private String section_id;
     private int needs_grading_count;
 
-    public void setSection_id(String section_id){
+    public void setSectionId(String section_id){
         this.section_id = section_id;
     }
 
-    public String getSection_id(){
+    public String getSectionId(){
         return this.section_id;
     }
 
-    public void setNeeds_grading_count(int needs_grading_count){
+    public void setNeedsGradingCount(int needs_grading_count){
         this.needs_grading_count = needs_grading_count;
     }
 
-    public int getNeeds_grading_count(){
+    public int getNeedsGradingCount(){
         return this.needs_grading_count;
     }
 }
@@ -134,219 +134,219 @@ public class Assignment {
         this.description = description;
     }
 
-    public String getCreated_at() {
+    public String getCreatedAt() {
         return created_at;
     }
 
-    public void setCreated_at(String created_at) {
+    public void setCreatedAt(String created_at) {
         this.created_at = created_at;
     }
 
-    public String getUpdated_at() {
+    public String getUpdatedAt() {
         return updated_at;
     }
 
-    public void setUpdated_at(String updated_at) {
+    public void setUpdatedAt(String updated_at) {
         this.updated_at = updated_at;
     }
 
-    public String getDue_at() {
+    public String getDueAt() {
         return due_at;
     }
 
-    public void setDue_at(String due_at) {
+    public void setDueAt(String due_at) {
         this.due_at = due_at;
     }
 
-    public String getLock_at() {
+    public String getLockAt() {
         return lock_at;
     }
 
-    public void setLock_at(String lock_at) {
+    public void setLockAt(String lock_at) {
         this.lock_at = lock_at;
     }
 
-    public String getUnlock_at() {
+    public String getUnlockAt() {
         return unlock_at;
     }
 
-    public void setUnlock_at(String unlock_at) {
+    public void setUnlockAt(String unlock_at) {
         this.unlock_at = unlock_at;
     }
 
-    public boolean isHas_overrides() {
+    public boolean isHasOverrides() {
         return has_overrides;
     }
 
-    public void setHas_overrides(boolean has_overrides) {
+    public void setHasOverrides(boolean has_overrides) {
         this.has_overrides = has_overrides;
     }
 
-    public String getAll_dates() {
+    public String getAllDates() {
         return all_dates;
     }
 
-    public void setAll_dates(String all_dates) {
+    public void setAllDates(String all_dates) {
         this.all_dates = all_dates;
     }
 
-    public int getCourse_id() {
+    public int getCourseId() {
         return course_id;
     }
 
-    public void setCourse_id(int course_id) {
+    public void setCourseId(int course_id) {
         this.course_id = course_id;
     }
 
-    public String getHtml_url() {
+    public String getHtmlUrl() {
         return html_url;
     }
 
-    public void setHtml_url(String html_url) {
+    public void setHtmlUrl(String html_url) {
         this.html_url = html_url;
     }
 
-    public String getSubmissions_download_url() {
+    public String getSubmissionsDownloadUrl() {
         return submissions_download_url;
     }
 
-    public void setSubmissions_download_url(String submissions_download_url) {
+    public void setSubmissionsDownloadUrl(String submissions_download_url) {
         this.submissions_download_url = submissions_download_url;
     }
 
-    public int getAssignment_group_id() {
+    public int getAssignmentGroupId() {
         return assignment_group_id;
     }
 
-    public void setAssignment_group_id(int assignment_group_id) {
+    public void setAssignmentGroupId(int assignment_group_id) {
         this.assignment_group_id = assignment_group_id;
     }
 
-    public boolean isDue_date_required() {
+    public boolean isDueDateRequired() {
         return due_date_required;
     }
 
-    public void setDue_date_required(boolean due_date_required) {
+    public void setDueDateRequired(boolean due_date_required) {
         this.due_date_required = due_date_required;
     }
 
-    public String[] getAllowed_extensions() {
+    public String[] getAllowedExtensions() {
         return allowed_extensions;
     }
 
-    public void setAllowed_extensions(String[] allowed_extensions) {
+    public void setAllowedExtensions(String[] allowed_extensions) {
         this.allowed_extensions = allowed_extensions;
     }
 
-    public int getMax_name_length() {
+    public int getMaxNameLength() {
         return max_name_length;
     }
 
-    public void setMax_name_length(int max_name_length) {
+    public void setMaxNameLength(int max_name_length) {
         this.max_name_length = max_name_length;
     }
 
-    public boolean isTurnitin_enabled() {
+    public boolean isTurnitinEnabled() {
         return turnitin_enabled;
     }
 
-    public void setTurnitin_enabled(boolean turnitin_enabled) {
+    public void setTurnitinEnabled(boolean turnitin_enabled) {
         this.turnitin_enabled = turnitin_enabled;
     }
 
-    public boolean isVericite_enabled() {
+    public boolean isVericiteEnabled() {
         return vericite_enabled;
     }
 
-    public void setVericite_enabled(boolean vericite_enabled) {
+    public void setVericiteEnabled(boolean vericite_enabled) {
         this.vericite_enabled = vericite_enabled;
     }
 
-    public String getTurnitin_settings() {
+    public String getTurnitinSettings() {
         return turnitin_settings;
     }
 
-    public void setTurnitin_settings(String turnitin_settings) {
+    public void setTurnitinSettings(String turnitin_settings) {
         this.turnitin_settings = turnitin_settings;
     }
 
-    public boolean isGrade_group_students_individually() {
+    public boolean isGradeGroupStudentsIndividually() {
         return grade_group_students_individually;
     }
 
-    public void setGrade_group_students_individually(boolean grade_group_students_individually) {
+    public void setGradeGroupStudentsIndividually(boolean grade_group_students_individually) {
         this.grade_group_students_individually = grade_group_students_individually;
     }
 
-    public String getExternal_tool_tag_attributes() {
+    public String getExternalToolTagAttributes() {
         return external_tool_tag_attributes;
     }
 
-    public void setExternal_tool_tag_attributes(String external_tool_tag_attributes) {
+    public void setExternalToolTagAttributes(String external_tool_tag_attributes) {
         this.external_tool_tag_attributes = external_tool_tag_attributes;
     }
 
-    public boolean isPeer_reviews() {
+    public boolean isPeerReviews() {
         return peer_reviews;
     }
 
-    public void setPeer_reviews(boolean peer_reviews) {
+    public void setPeerReviews(boolean peer_reviews) {
         this.peer_reviews = peer_reviews;
     }
 
-    public boolean isAutomatic_peer_reviews() {
+    public boolean isAutomaticPeerReviews() {
         return automatic_peer_reviews;
     }
 
-    public void setAutomatic_peer_reviews(boolean automatic_peer_reviews) {
+    public void setAutomaticPeerReviews(boolean automatic_peer_reviews) {
         this.automatic_peer_reviews = automatic_peer_reviews;
     }
 
-    public int getPeer_review_count() {
+    public int getPeerReviewCount() {
         return peer_review_count;
     }
 
-    public void setPeer_review_count(int peer_review_count) {
+    public void setPeerReviewCount(int peer_review_count) {
         this.peer_review_count = peer_review_count;
     }
 
-    public String getPeer_reviews_assign_at() {
+    public String getPeerReviewsAssignAt() {
         return peer_reviews_assign_at;
     }
 
-    public void setPeer_reviews_assign_at(String peer_reviews_assign_at) {
+    public void setPeerReviewsAssignAt(String peer_reviews_assign_at) {
         this.peer_reviews_assign_at = peer_reviews_assign_at;
     }
 
-    public boolean isIntra_group_peer_reviews() {
+    public boolean isIntraGroupPeerReviews() {
         return intra_group_peer_reviews;
     }
 
-    public void setIntra_group_peer_reviews(boolean intra_group_peer_reviews) {
+    public void setIntraGroupPeerReviews(boolean intra_group_peer_reviews) {
         this.intra_group_peer_reviews = intra_group_peer_reviews;
     }
 
-    public int getGroup_category_id() {
+    public int getGroupCategoryId() {
         return group_category_id;
     }
 
-    public void setGroup_category_id(int group_category_id) {
+    public void setGroupCategoryId(int group_category_id) {
         this.group_category_id = group_category_id;
     }
 
-    public int getNeeds_grading_count() {
+    public int getNeedsGradingCount() {
         return needs_grading_count;
     }
 
-    public void setNeeds_grading_count(int needs_grading_count) {
+    public void setNeedsGradingCount(int needs_grading_count) {
         this.needs_grading_count = needs_grading_count;
     }
 
-    public Needs_grading_count_by_section[] getNeeds_grading_count_by_section() {
+    public Needs_grading_count_by_section[] getNeedsGradingCountBySection() {
         return needs_grading_count_by_section;
     }
 
-    public void setNeeds_grading_count_by_section(Needs_grading_count_by_section[] needs_grading_count_by_section) {
+    public void setNeedsGradingCountBySection(Needs_grading_count_by_section[] needs_grading_count_by_section) {
         this.needs_grading_count_by_section = needs_grading_count_by_section;
     }
 
@@ -358,59 +358,59 @@ public class Assignment {
         this.position = position;
     }
 
-    public boolean isPost_to_sis() {
+    public boolean isPostToSis() {
         return post_to_sis;
     }
 
-    public void setPost_to_sis(boolean post_to_sis) {
+    public void setPostToSis(boolean post_to_sis) {
         this.post_to_sis = post_to_sis;
     }
 
-    public String getIntegration_id() {
+    public String getIntegrationId() {
         return integration_id;
     }
 
-    public void setIntegration_id(String integration_id) {
+    public void setIntegrationId(String integration_id) {
         this.integration_id = integration_id;
     }
 
-    public int getPoints_possible() {
+    public int getPointsPossible() {
         return points_possible;
     }
 
-    public void setPoints_possible(int points_possible) {
+    public void setPointsPossible(int points_possible) {
         this.points_possible = points_possible;
     }
 
-    public String[] getSubmission_types() {
+    public String[] getSubmissionTypes() {
         return submission_types;
     }
 
-    public void setSubmission_types(String[] submission_types) {
+    public void setSubmissionTypes(String[] submission_types) {
         this.submission_types = submission_types;
     }
 
-    public boolean isHas_submitted_submissions() {
+    public boolean isHasSubmittedSubmissions() {
         return has_submitted_submissions;
     }
 
-    public void setHas_submitted_submissions(boolean has_submitted_submissions) {
+    public void setHasSubmittedSubmissions(boolean has_submitted_submissions) {
         this.has_submitted_submissions = has_submitted_submissions;
     }
 
-    public String getGrading_type() {
+    public String getGradingType() {
         return grading_type;
     }
 
-    public void setGrading_type(String grading_type) {
+    public void setGradingType(String grading_type) {
         this.grading_type = grading_type;
     }
 
-    public String getGrading_standard_id() {
+    public String getGradingStandardId() {
         return grading_standard_id;
     }
 
-    public void setGrading_standard_id(String grading_standard_id) {
+    public void setGradingStandardId(String grading_standard_id) {
         this.grading_standard_id = grading_standard_id;
     }
 
@@ -430,67 +430,67 @@ public class Assignment {
         this.unpublishable = unpublishable;
     }
 
-    public boolean isOnly_visible_to_overrides() {
+    public boolean isOnlyVisibleToOverrides() {
         return only_visible_to_overrides;
     }
 
-    public void setOnly_visible_to_overrides(boolean only_visible_to_overrides) {
+    public void setOnlyVisibleToOverrides(boolean only_visible_to_overrides) {
         this.only_visible_to_overrides = only_visible_to_overrides;
     }
 
-    public boolean isLocked_for_user() {
+    public boolean isLockedForUser() {
         return locked_for_user;
     }
 
-    public void setLocked_for_user(boolean locked_for_user) {
+    public void setLockedForUser(boolean locked_for_user) {
         this.locked_for_user = locked_for_user;
     }
 
-    public String getLock_info() {
+    public String getLockInfo() {
         return lock_info;
     }
 
-    public void setLock_info(String lock_info) {
+    public void setLockInfo(String lock_info) {
         this.lock_info = lock_info;
     }
 
-    public String getLock_explanation() {
+    public String getLockExplanation() {
         return lock_explanation;
     }
 
-    public void setLock_explanation(String lock_explanation) {
+    public void setLockExplanation(String lock_explanation) {
         this.lock_explanation = lock_explanation;
     }
 
-    public int getQuiz_id() {
+    public int getQuizId() {
         return quiz_id;
     }
 
-    public void setQuiz_id(int quiz_id) {
+    public void setQuizId(int quiz_id) {
         this.quiz_id = quiz_id;
     }
 
-    public boolean isAnonymous_submissions() {
+    public boolean isAnonymousSubmissions() {
         return anonymous_submissions;
     }
 
-    public void setAnonymous_submissions(boolean anonymous_submissions) {
+    public void setAnonymousSubmissions(boolean anonymous_submissions) {
         this.anonymous_submissions = anonymous_submissions;
     }
 
-    public String getDiscussion_topic() {
+    public String getDiscussionTopic() {
         return discussion_topic;
     }
 
-    public void setDiscussion_topic(String discussion_topic) {
+    public void setDiscussionTopic(String discussion_topic) {
         this.discussion_topic = discussion_topic;
     }
 
-    public boolean isFreeze_on_copy() {
+    public boolean isFreezeOnCopy() {
         return freeze_on_copy;
     }
 
-    public void setFreeze_on_copy(boolean freeze_on_copy) {
+    public void setFreezeOnCopy(boolean freeze_on_copy) {
         this.freeze_on_copy = freeze_on_copy;
     }
 
@@ -502,11 +502,11 @@ public class Assignment {
         this.frozen = frozen;
     }
 
-    public String[] getFrozen_attributes() {
+    public String[] getFrozenAttributes() {
         return frozen_attributes;
     }
 
-    public void setFrozen_attributes(String[] frozen_attributes) {
+    public void setFrozenAttributes(String[] frozen_attributes) {
         this.frozen_attributes = frozen_attributes;
     }
 
@@ -518,11 +518,11 @@ public class Assignment {
         this.submission = submission;
     }
 
-    public boolean isUse_rubric_for_grading() {
+    public boolean isUseRubricForGrading() {
         return use_rubric_for_grading;
     }
 
-    public void setUse_rubric_for_grading(boolean use_rubric_for_grading) {
+    public void setUseRubricForGrading(boolean use_rubric_for_grading) {
         this.use_rubric_for_grading = use_rubric_for_grading;
     }
 
@@ -534,11 +534,11 @@ public class Assignment {
         this.rubric = rubric;
     }
 
-    public int[] getAssignment_visibility() {
+    public int[] getAssignmentVisibility() {
         return assignment_visibility;
     }
 
-    public void setAssignment_visibility(int[] assignment_visibility) {
+    public void setAssignmentVisibility(int[] assignment_visibility) {
         this.assignment_visibility = assignment_visibility;
     }
 
@@ -550,99 +550,99 @@ public class Assignment {
         this.overrides = overrides;
     }
 
-    public boolean isOmit_from_final_grade() {
+    public boolean isOmitFromFinalGrade() {
         return omit_from_final_grade;
     }
 
-    public void setOmit_from_final_grade(boolean omit_from_final_grade) {
+    public void setOmitFromFinalGrade(boolean omit_from_final_grade) {
         this.omit_from_final_grade = omit_from_final_grade;
     }
 
-    public boolean isModerated_grading() {
+    public boolean isModeratedGrading() {
         return moderated_grading;
     }
 
-    public void setModerated_grading(boolean moderated_grading) {
+    public void setModeratedGrading(boolean moderated_grading) {
         this.moderated_grading = moderated_grading;
     }
 
-    public int getGrader_count() {
+    public int getGraderCount() {
         return grader_count;
     }
 
-    public void setGrader_count(int grader_count) {
+    public void setGraderCount(int grader_count) {
         this.grader_count = grader_count;
     }
 
-    public int getFinal_grader_id() {
+    public int getFinalGraderId() {
         return final_grader_id;
     }
 
-    public void setFinal_grader_id(int final_grader_id) {
+    public void setFinalGraderId(int final_grader_id) {
         this.final_grader_id = final_grader_id;
     }
 
-    public boolean isGrader_comments_visible_to_graders() {
+    public boolean isGraderCommentsVisibleToGraders() {
         return grader_comments_visible_to_graders;
     }
 
-    public void setGrader_comments_visible_to_graders(boolean grader_comments_visible_to_graders) {
+    public void setGraderCommentsVisibleToGraders(boolean grader_comments_visible_to_graders) {
         this.grader_comments_visible_to_graders = grader_comments_visible_to_graders;
     }
 
-    public boolean isGraders_anonymous_to_graders() {
+    public boolean isGradersAnonymousToGraders() {
         return graders_anonymous_to_graders;
     }
 
-    public void setGraders_anonymous_to_graders(boolean graders_anonymous_to_graders) {
+    public void setGradersAnonymousToGraders(boolean graders_anonymous_to_graders) {
         this.graders_anonymous_to_graders = graders_anonymous_to_graders;
     }
 
-    public boolean isGrader_names_visible_to_final_grader() {
+    public boolean isGraderNamesVisibleToFinalGrader() {
         return grader_names_visible_to_final_grader;
     }
 
-    public void setGrader_names_visible_to_final_grader(boolean grader_names_visible_to_final_grader) {
+    public void setGraderNamesVisibleToFinalGrader(boolean grader_names_visible_to_final_grader) {
         this.grader_names_visible_to_final_grader = grader_names_visible_to_final_grader;
     }
 
-    public boolean isAnonymous_grading() {
+    public boolean isAnonymousGrading() {
         return anonymous_grading;
     }
 
-    public void setAnonymous_grading(boolean anonymous_grading) {
+    public void setAnonymousGrading(boolean anonymous_grading) {
         this.anonymous_grading = anonymous_grading;
     }
 
-    public int getAllowed_attempts() {
+    public int getAllowedAttempts() {
         return allowed_attempts;
     }
 
-    public void setAllowed_attempts(int allowed_attempts) {
+    public void setAllowedAttempts(int allowed_attempts) {
         this.allowed_attempts = allowed_attempts;
     }
 
-    public boolean isPost_manually() {
+    public boolean isPostManually() {
         return post_manually;
     }
 
-    public void setPost_manually(boolean post_manually) {
+    public void setPostManually(boolean post_manually) {
         this.post_manually = post_manually;
     }
 
-    public String getScore_statistics() {
+    public String getScoreStatistics() {
         return score_statistics;
     }
 
-    public void setScore_statistics(String score_statistics) {
+    public void setScoreStatistics(String score_statistics) {
         this.score_statistics = score_statistics;
     }
 
-    public boolean isCan_submit() {
+    public boolean isCanSubmit() {
         return can_submit;
     }
 
-    public void setCan_submit(boolean can_submit) {
+    public void setCanSubmit(boolean can_submit) {
         this.can_submit = can_submit;
     }
 }

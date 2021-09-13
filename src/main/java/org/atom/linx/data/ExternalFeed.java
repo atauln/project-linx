@@ -18,11 +18,11 @@ public class ExternalFeed {
         this.id = id;
     }
 
-    public String getDisplay_name() {
+    public String getDisplayName() {
         return display_name;
     }
 
-    public void setDisplay_name(String display_name) {
+    public void setDisplayName(String display_name) {
         this.display_name = display_name;
     }
 
@@ -34,19 +34,19 @@ public class ExternalFeed {
         this.url = url;
     }
 
-    public String getHeader_match() {
+    public String getHeaderMatch() {
         return header_match;
     }
 
-    public void setHeader_match(String header_match) {
+    public void setHeaderMatch(String header_match) {
         this.header_match = header_match;
     }
 
-    public Date getCreated_at() {
+    public Date getCreatedAt() {
         return created_at;
     }
 
-    public void setCreated_at(Date created_at) {
+    public void setCreatedAt(Date created_at) {
         this.created_at = created_at;
     }
 

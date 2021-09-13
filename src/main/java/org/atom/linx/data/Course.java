@@ -20,19 +20,19 @@ class BlueprintRestrictions{
         this.points = points;
     }
 
-    public boolean isDue_dates() {
+    public boolean isDueDates() {
         return due_dates;
     }
 
-    public void setDue_dates(boolean due_dates) {
+    public void setDueDates(boolean due_dates) {
         this.due_dates = due_dates;
     }
 
-    public boolean isAvailability_dates() {
+    public boolean isAvailabilityDates() {
         return availability_dates;
     }
 
-    public void setAvailability_dates(boolean availability_dates) {
+    public void setAvailabilityDates(boolean availability_dates) {
         this.availability_dates = availability_dates;
     }
 
@@ -60,11 +60,11 @@ class BlueprintRestrictionsByObjectType{
         this.assignment = assignment;
     }
 
-    public WikiPage getWiki_page() {
+    public WikiPage getWikiPage() {
         return wiki_page;
     }
 
-    public void setWiki_page(WikiPage wiki_page) {
+    public void setWikiPage(WikiPage wiki_page) {
         this.wiki_page = wiki_page;
     }
 }
@@ -137,11 +137,11 @@ public class Course{
         this.id = id;
     }
 
-    public Object getSis_course_id() {
+    public Object getSisCourseId() {
         return sis_course_id;
     }
 
-    public void setSis_course_id(Object sis_course_id) {
+    public void setSisCourseId(Object sis_course_id) {
         this.sis_course_id = sis_course_id;
     }
 
@@ -153,19 +153,19 @@ public class Course{
         this.uuid = uuid;
     }
 
-    public Object getIntegration_id() {
+    public Object getIntegrationId() {
         return integration_id;
     }
 
-    public void setIntegration_id(Object integration_id) {
+    public void setIntegrationId(Object integration_id) {
         this.integration_id = integration_id;
     }
 
-    public int getSis_import_id() {
+    public int getSisImportId() {
         return sis_import_id;
     }
 
-    public void setSis_import_id(int sis_import_id) {
+    public void setSisImportId(int sis_import_id) {
         this.sis_import_id = sis_import_id;
     }
 
@@ -177,91 +177,91 @@ public class Course{
         this.name = name;
     }
 
-    public String getCourse_code() {
+    public String getCourseCode() {
         return course_code;
     }
 
-    public void setCourse_code(String course_code) {
+    public void setCourseCode(String course_code) {
         this.course_code = course_code;
     }
 
-    public String getWorkflow_state() {
+    public String getWorkflowState() {
         return workflow_state;
     }
 
-    public void setWorkflow_state(String workflow_state) {
+    public void setWorkflowState(String workflow_state) {
         this.workflow_state = workflow_state;
     }
 
-    public int getAccount_id() {
+    public int getAccountId() {
         return account_id;
     }
 
-    public void setAccount_id(int account_id) {
+    public void setAccountId(int account_id) {
         this.account_id = account_id;
     }
 
-    public int getRoot_account_id() {
+    public int getRootAccountId() {
         return root_account_id;
     }
 
-    public void setRoot_account_id(int root_account_id) {
+    public void setRootAccountId(int root_account_id) {
         this.root_account_id = root_account_id;
     }
 
-    public int getEnrollment_term_id() {
+    public int getEnrollmentTermId() {
         return enrollment_term_id;
     }
 
-    public void setEnrollment_term_id(int enrollment_term_id) {
+    public void setEnrollmentTermId(int enrollment_term_id) {
         this.enrollment_term_id = enrollment_term_id;
     }
 
-    public Object getGrading_periods() {
+    public Object getGradingPeriods() {
         return grading_periods;
     }
 
-    public void setGrading_periods(Object grading_periods) {
+    public void setGradingPeriods(Object grading_periods) {
         this.grading_periods = grading_periods;
     }
 
-    public int getGrading_standard_id() {
+    public int getGradingStandardId() {
         return grading_standard_id;
     }
 
-    public void setGrading_standard_id(int grading_standard_id) {
+    public void setGradingStandardId(int grading_standard_id) {
         this.grading_standard_id = grading_standard_id;
     }
 
-    public String getGrade_passback_setting() {
+    public String getGradePassbackSetting() {
         return grade_passback_setting;
     }
 
-    public void setGrade_passback_setting(String grade_passback_setting) {
+    public void setGradePassbackSetting(String grade_passback_setting) {
         this.grade_passback_setting = grade_passback_setting;
     }
 
-    public Date getCreated_at() {
+    public Date getCreatedAt() {
         return created_at;
     }
 
-    public void setCreated_at(Date created_at) {
+    public void setCreatedAt(Date created_at) {
         this.created_at = created_at;
     }
 
-    public Date getStart_at() {
+    public Date getStartAt() {
         return start_at;
     }
 
-    public void setStart_at(Date start_at) {
+    public void setStartAt(Date start_at) {
         this.start_at = start_at;
     }
 
-    public Date getEnd_at() {
+    public Date getEndAt() {
         return end_at;
     }
 
-    public void setEnd_at(Date end_at) {
+    public void setEndAt(Date end_at) {
         this.end_at = end_at;
     }
 
@@ -281,11 +281,11 @@ public class Course{
         this.enrollments = enrollments;
     }
 
-    public int getTotal_students() {
+    public int getTotalStudents() {
         return total_students;
     }
 
-    public void setTotal_students(int total_students) {
+    public void setTotalStudents(int total_students) {
         this.total_students = total_students;
     }
 
@@ -297,27 +297,27 @@ public class Course{
         this.calendar = calendar;
     }
 
-    public String getDefault_view() {
+    public String getDefaultView() {
         return default_view;
     }
 
-    public void setDefault_view(String default_view) {
+    public void setDefaultView(String default_view) {
         this.default_view = default_view;
     }
 
-    public String getSyllabus_body() {
+    public String getSyllabusBody() {
         return syllabus_body;
     }
 
-    public void setSyllabus_body(String syllabus_body) {
+    public void setSyllabusBody(String syllabus_body) {
         this.syllabus_body = syllabus_body;
     }
 
-    public int getNeeds_grading_count() {
+    public int getNeedsGradingCount() {
         return needs_grading_count;
     }
 
-    public void setNeeds_grading_count(int needs_grading_count) {
+    public void setNeedsGradingCount(int needs_grading_count) {
         this.needs_grading_count = needs_grading_count;
     }
 
@@ -329,19 +329,19 @@ public class Course{
         this.term = term;
     }
 
-    public Object getCourse_progress() {
+    public Object getCourseProgress() {
         return course_progress;
     }
 
-    public void setCourse_progress(Object course_progress) {
+    public void setCourseProgress(Object course_progress) {
         this.course_progress = course_progress;
     }
 
-    public boolean isApply_assignment_group_weights() {
+    public boolean isApplyAssignmentGroupWeights() {
         return apply_assignment_group_weights;
     }
 
-    public void setApply_assignment_group_weights(boolean apply_assignment_group_weights) {
+    public void setApplyAssignmentGroupWeights(boolean apply_assignment_group_weights) {
         this.apply_assignment_group_weights = apply_assignment_group_weights;
     }
 
@@ -353,67 +353,67 @@ public class Course{
         this.permissions = permissions;
     }
 
-    public boolean isIs_public() {
+    public boolean isIsPublic() {
         return is_public;
     }
 
-    public void setIs_public(boolean is_public) {
+    public void setIsPublic(boolean is_public) {
         this.is_public = is_public;
     }
 
-    public boolean isIs_public_to_auth_users() {
+    public boolean isIsPublicToAuthUsers() {
         return is_public_to_auth_users;
     }
 
-    public void setIs_public_to_auth_users(boolean is_public_to_auth_users) {
+    public void setIsPublicToAuthUsers(boolean is_public_to_auth_users) {
         this.is_public_to_auth_users = is_public_to_auth_users;
     }
 
-    public boolean isPublic_syllabus() {
+    public boolean isPublicSyllabus() {
         return public_syllabus;
     }
 
-    public void setPublic_syllabus(boolean public_syllabus) {
+    public void setPublicSyllabus(boolean public_syllabus) {
         this.public_syllabus = public_syllabus;
     }
 
-    public boolean isPublic_syllabus_to_auth() {
+    public boolean isPublicSyllabusToAuth() {
         return public_syllabus_to_auth;
     }
 
-    public void setPublic_syllabus_to_auth(boolean public_syllabus_to_auth) {
+    public void setPublicSyllabusToAuth(boolean public_syllabus_to_auth) {
         this.public_syllabus_to_auth = public_syllabus_to_auth;
     }
 
-    public String getPublic_description() {
+    public String getPublicDescription() {
         return public_description;
     }
 
-    public void setPublic_description(String public_description) {
+    public void setPublicDescription(String public_description) {
         this.public_description = public_description;
     }
 
-    public int getStorage_quota_mb() {
+    public int getStorageQuotaMb() {
         return storage_quota_mb;
     }
 
-    public void setStorage_quota_mb(int storage_quota_mb) {
+    public void setStorageQuotaMb(int storage_quota_mb) {
         this.storage_quota_mb = storage_quota_mb;
     }
 
-    public int getStorage_quota_used_mb() {
+    public int getStorageQuotaUsedMb() {
         return storage_quota_used_mb;
     }
 
-    public void setStorage_quota_used_mb(int storage_quota_used_mb) {
+    public void setStorageQuotaUsedMb(int storage_quota_used_mb) {
         this.storage_quota_used_mb = storage_quota_used_mb;
     }
 
-    public boolean isHide_final_grades() {
+    public boolean isHideFinalGrades() {
         return hide_final_grades;
     }
 
-    public void setHide_final_grades(boolean hide_final_grades) {
+    public void setHideFinalGrades(boolean hide_final_grades) {
         this.hide_final_grades = hide_final_grades;
     }
 
@@ -425,75 +425,75 @@ public class Course{
         this.license = license;
     }
 
-    public boolean isAllow_student_assignment_edits() {
+    public boolean isAllowStudentAssignmentEdits() {
         return allow_student_assignment_edits;
     }
 
-    public void setAllow_student_assignment_edits(boolean allow_student_assignment_edits) {
+    public void setAllowStudentAssignmentEdits(boolean allow_student_assignment_edits) {
         this.allow_student_assignment_edits = allow_student_assignment_edits;
     }
 
-    public boolean isAllow_wiki_comments() {
+    public boolean isAllowWikiComments() {
         return allow_wiki_comments;
     }
 
-    public void setAllow_wiki_comments(boolean allow_wiki_comments) {
+    public void setAllowWikiComments(boolean allow_wiki_comments) {
         this.allow_wiki_comments = allow_wiki_comments;
     }
 
-    public boolean isAllow_student_forum_attachments() {
+    public boolean isAllowStudentForumAttachments() {
         return allow_student_forum_attachments;
     }
 
-    public void setAllow_student_forum_attachments(boolean allow_student_forum_attachments) {
+    public void setAllowStudentForumAttachments(boolean allow_student_forum_attachments) {
         this.allow_student_forum_attachments = allow_student_forum_attachments;
     }
 
-    public boolean isOpen_enrollment() {
+    public boolean isOpenEnrollment() {
         return open_enrollment;
     }
 
-    public void setOpen_enrollment(boolean open_enrollment) {
+    public void setOpenEnrollment(boolean open_enrollment) {
         this.open_enrollment = open_enrollment;
     }
 
-    public boolean isSelf_enrollment() {
+    public boolean isSelfEnrollment() {
         return self_enrollment;
     }
 
-    public void setSelf_enrollment(boolean self_enrollment) {
+    public void setSelfEnrollment(boolean self_enrollment) {
         this.self_enrollment = self_enrollment;
     }
 
-    public boolean isRestrict_enrollments_to_course_dates() {
+    public boolean isRestrictEnrollmentsToCourseDates() {
         return restrict_enrollments_to_course_dates;
     }
 
-    public void setRestrict_enrollments_to_course_dates(boolean restrict_enrollments_to_course_dates) {
+    public void setRestrictEnrollmentsToCourseDates(boolean restrict_enrollments_to_course_dates) {
         this.restrict_enrollments_to_course_dates = restrict_enrollments_to_course_dates;
     }
 
-    public String getCourse_format() {
+    public String getCourseFormat() {
         return course_format;
     }
 
-    public void setCourse_format(String course_format) {
+    public void setCourseFormat(String course_format) {
         this.course_format = course_format;
     }
 
-    public boolean isAccess_restricted_by_date() {
+    public boolean isAccessRestrictedByDate() {
         return access_restricted_by_date;
     }
 
-    public void setAccess_restricted_by_date(boolean access_restricted_by_date) {
+    public void setAccessRestrictedByDate(boolean access_restricted_by_date) {
         this.access_restricted_by_date = access_restricted_by_date;
     }
 
-    public String getTime_zone() {
+    public String getTimeZone() {
         return time_zone;
     }
 
-    public void setTime_zone(String time_zone) {
+    public void setTimeZone(String time_zone) {
         this.time_zone = time_zone;
     }
 
@@ -505,19 +505,19 @@ public class Course{
         this.blueprint = blueprint;
     }
 
-    public BlueprintRestrictions getBlueprint_restrictions() {
+    public BlueprintRestrictions getBlueprintRestrictions() {
         return blueprint_restrictions;
     }
 
-    public void setBlueprint_restrictions(BlueprintRestrictions blueprint_restrictions) {
+    public void setBlueprintRestrictions(BlueprintRestrictions blueprint_restrictions) {
         this.blueprint_restrictions = blueprint_restrictions;
     }
 
-    public BlueprintRestrictionsByObjectType getBlueprint_restrictions_by_object_type() {
+    public BlueprintRestrictionsByObjectType getBlueprintRestrictionsByObjectType() {
         return blueprint_restrictions_by_object_type;
     }
 
-    public void setBlueprint_restrictions_by_object_type(BlueprintRestrictionsByObjectType blueprint_restrictions_by_object_type) {
+    public void setBlueprintRestrictionsByObjectType(BlueprintRestrictionsByObjectType blueprint_restrictions_by_object_type) {
         this.blueprint_restrictions_by_object_type = blueprint_restrictions_by_object_type;
     }
 

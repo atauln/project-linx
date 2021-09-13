@@ -14,11 +14,11 @@ class GroupTopicChildren {
         this.id = id;
     }
 
-    public int getGroup_id() {
+    public int getGroupId() {
         return group_id;
     }
 
-    public void setGroup_id(int group_id) {
+    public void setGroupId(int group_id) {
         this.group_id = group_id;
     }
 }
@@ -83,67 +83,67 @@ public class DiscussionTopic {
         this.message = message;
     }
 
-    public String getHtml_url() {
+    public String getHtmlUrl() {
         return html_url;
     }
 
-    public void setHtml_url(String html_url) {
+    public void setHtmlUrl(String html_url) {
         this.html_url = html_url;
     }
 
-    public Date getPosted_at() {
+    public Date getPostedAt() {
         return posted_at;
     }
 
-    public void setPosted_at(Date posted_at) {
+    public void setPostedAt(Date posted_at) {
         this.posted_at = posted_at;
     }
 
-    public Date getLast_reply_at() {
+    public Date getLastReplyAt() {
         return last_reply_at;
     }
 
-    public void setLast_reply_at(Date last_reply_at) {
+    public void setLastReplyAt(Date last_reply_at) {
         this.last_reply_at = last_reply_at;
     }
 
-    public boolean isRequire_initial_post() {
+    public boolean isRequireInitialPost() {
         return require_initial_post;
     }
 
-    public void setRequire_initial_post(boolean require_initial_post) {
+    public void setRequireInitialPost(boolean require_initial_post) {
         this.require_initial_post = require_initial_post;
     }
 
-    public boolean isUser_can_see_posts() {
+    public boolean isUserCanSeePosts() {
         return user_can_see_posts;
     }
 
-    public void setUser_can_see_posts(boolean user_can_see_posts) {
+    public void setUserCanSeePosts(boolean user_can_see_posts) {
         this.user_can_see_posts = user_can_see_posts;
     }
 
-    public int getDiscussion_subentry_count() {
+    public int getDiscussionSubentryCount() {
         return discussion_subentry_count;
     }
 
-    public void setDiscussion_subentry_count(int discussion_subentry_count) {
+    public void setDiscussionSubentryCount(int discussion_subentry_count) {
         this.discussion_subentry_count = discussion_subentry_count;
     }
 
-    public String getRead_state() {
+    public String getReadState() {
         return read_state;
     }
 
-    public void setRead_state(String read_state) {
+    public void setReadState(String read_state) {
         this.read_state = read_state;
     }
 
-    public int getUnread_count() {
+    public int getUnreadCount() {
         return unread_count;
     }
 
-    public void setUnread_count(int unread_count) {
+    public void setUnreadCount(int unread_count) {
         this.unread_count = unread_count;
     }
 
@@ -155,27 +155,27 @@ public class DiscussionTopic {
         this.subscribed = subscribed;
     }
 
-    public String getSubscription_hold() {
+    public String getSubscriptionHold() {
         return subscription_hold;
     }
 
-    public void setSubscription_hold(String subscription_hold) {
+    public void setSubscriptionHold(String subscription_hold) {
         this.subscription_hold = subscription_hold;
     }
 
-    public Object getAssignment_id() {
+    public Object getAssignmentId() {
         return assignment_id;
     }
 
-    public void setAssignment_id(Object assignment_id) {
+    public void setAssignmentId(Object assignment_id) {
         this.assignment_id = assignment_id;
     }
 
-    public Object getDelayed_post_at() {
+    public Object getDelayedPostAt() {
         return delayed_post_at;
     }
 
-    public void setDelayed_post_at(Object delayed_post_at) {
+    public void setDelayedPostAt(Object delayed_post_at) {
         this.delayed_post_at = delayed_post_at;
     }
 
@@ -187,11 +187,11 @@ public class DiscussionTopic {
         this.published = published;
     }
 
-    public Object getLock_at() {
+    public Object getLockAt() {
         return lock_at;
     }
 
-    public void setLock_at(Object lock_at) {
+    public void setLockAt(Object lock_at) {
         this.lock_at = lock_at;
     }
 
@@ -211,83 +211,83 @@ public class DiscussionTopic {
         this.pinned = pinned;
     }
 
-    public boolean isLocked_for_user() {
+    public boolean isLockedForUser() {
         return locked_for_user;
     }
 
-    public void setLocked_for_user(boolean locked_for_user) {
+    public void setLockedForUser(boolean locked_for_user) {
         this.locked_for_user = locked_for_user;
     }
 
-    public Object getLock_info() {
+    public Object getLockInfo() {
         return lock_info;
     }
 
-    public void setLock_info(Object lock_info) {
+    public void setLockInfo(Object lock_info) {
         this.lock_info = lock_info;
     }
 
-    public String getLock_explanation() {
+    public String getLockExplanation() {
         return lock_explanation;
     }
 
-    public void setLock_explanation(String lock_explanation) {
+    public void setLockExplanation(String lock_explanation) {
         this.lock_explanation = lock_explanation;
     }
 
-    public String getUser_name() {
+    public String getUserName() {
         return user_name;
     }
 
-    public void setUser_name(String user_name) {
+    public void setUserName(String user_name) {
         this.user_name = user_name;
     }
 
-    public int[] getTopic_children() {
+    public int[] getTopicChildren() {
         return topic_children;
     }
 
-    public void setTopic_children(int[] topic_children) {
+    public void setTopicChildren(int[] topic_children) {
         this.topic_children = topic_children;
     }
 
-    public GroupTopicChildren[] getGroup_topic_children() {
+    public GroupTopicChildren[] getGroupTopicChildren() {
         return group_topic_children;
     }
 
-    public void setGroup_topic_children(GroupTopicChildren[] group_topic_children) {
+    public void setGroupTopicChildren(GroupTopicChildren[] group_topic_children) {
         this.group_topic_children = group_topic_children;
     }
 
-    public Object getRoot_topic_id() {
+    public Object getRootTopicId() {
         return root_topic_id;
     }
 
-    public void setRoot_topic_id(Object root_topic_id) {
+    public void setRootTopicId(Object root_topic_id) {
         this.root_topic_id = root_topic_id;
     }
 
-    public String getPodcast_url() {
+    public String getPodcastUrl() {
         return podcast_url;
     }
 
-    public void setPodcast_url(String podcast_url) {
+    public void setPodcastUrl(String podcast_url) {
         this.podcast_url = podcast_url;
     }
 
-    public String getDiscussion_type() {
+    public String getDiscussionType() {
         return discussion_type;
     }
 
-    public void setDiscussion_type(String discussion_type) {
+    public void setDiscussionType(String discussion_type) {
         this.discussion_type = discussion_type;
     }
 
-    public Object getGroup_category_id() {
+    public Object getGroupCategoryId() {
         return group_category_id;
     }
 
-    public void setGroup_category_id(Object group_category_id) {
+    public void setGroupCategoryId(Object group_category_id) {
         this.group_category_id = group_category_id;
     }
 
@@ -307,27 +307,27 @@ public class DiscussionTopic {
         this.permissions = permissions;
     }
 
-    public boolean isAllow_rating() {
+    public boolean isAllowRating() {
         return allow_rating;
     }
 
-    public void setAllow_rating(boolean allow_rating) {
+    public void setAllowRating(boolean allow_rating) {
         this.allow_rating = allow_rating;
     }
 
-    public boolean isOnly_graders_can_rate() {
+    public boolean isOnlyGradersCanRate() {
         return only_graders_can_rate;
     }
 
-    public void setOnly_graders_can_rate(boolean only_graders_can_rate) {
+    public void setOnlyGradersCanRate(boolean only_graders_can_rate) {
         this.only_graders_can_rate = only_graders_can_rate;
     }
 
-    public boolean isSort_by_rating() {
+    public boolean isSortByRating() {
         return sort_by_rating;
     }
 
-    public void setSort_by_rating(boolean sort_by_rating) {
+    public void setSortByRating(boolean sort_by_rating) {
         this.sort_by_rating = sort_by_rating;
     }
 }
