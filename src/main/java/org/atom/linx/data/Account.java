@@ -1,5 +1,7 @@
 package org.atom.linx.data;
 
+import org.atom.linx.DataMasterclass;
+
 public class Account {
     public int id;
     public String name;
