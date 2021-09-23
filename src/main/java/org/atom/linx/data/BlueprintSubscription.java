@@ -1,10 +1,10 @@
 package org.atom.linx.data;
 
 class BlueprintCourse {
-    private int id;
-    private String name;
-    private String course_code;
-    private String term_name;
+    protected int id;
+    protected String name;
+    protected String course_code;
+    protected String term_name;
 
     public int getId() {
         return id;
@@ -40,9 +40,9 @@ class BlueprintCourse {
 }
 
 public class BlueprintSubscription {
-    private int id;
-    private int template_id;
-    private BlueprintCourse blueprint_course;
+    protected int id;
+    protected int template_id;
+    protected BlueprintCourse blueprint_course;
 
     public int getId() {
         return id;

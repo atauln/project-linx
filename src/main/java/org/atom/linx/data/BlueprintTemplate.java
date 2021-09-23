@@ -3,11 +3,11 @@ package org.atom.linx.data;
 import java.util.Date;
 
 public class BlueprintTemplate {
-    private int id;
-    private int course_id;
-    private Date last_export_completed_at;
-    private int associated_course_count;
-    private BlueprintMigration latest_migration;
+    protected int id;
+    protected int course_id;
+    protected Date last_export_completed_at;
+    protected int associated_course_count;
+    protected BlueprintMigration latest_migration;
 
     public int getId() {
         return id;

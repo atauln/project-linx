@@ -1,9 +1,9 @@
 package org.atom.linx.data;
 public class CourseProgress {
-    private int requirement_count;
-    private int requirement_completed_count;
-    private String next_requirement_url;
-    private String completed_at;
+    protected int requirement_count;
+    protected int requirement_completed_count;
+    protected String next_requirement_url;
+    protected String completed_at;
     public String toString() {
         String s = "";
         s += "Requirement Count: " + requirement_count;

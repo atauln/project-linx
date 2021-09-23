@@ -3,11 +3,11 @@ package org.atom.linx.data;
 import java.util.Date;
 
 public class AuthenticationEvent {
-    private Date created_at;
-    private String event_type;
-    private int pseudonym_id;
-    private int account_id;
-    private int user_id;
+    protected Date created_at;
+    protected String event_type;
+    protected int pseudonym_id;
+    protected int account_id;
+    protected int user_id;
 
     public Date getCreatedAt() {
         return created_at;

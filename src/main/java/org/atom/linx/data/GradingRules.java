@@ -1,9 +1,9 @@
 package org.atom.linx.data;
 
 public class GradingRules {
-    public int drop_lowest;
-    public int drop_highest;
-    public int[] never_drop;
+    protected int drop_lowest;
+    protected int drop_highest;
+    protected int[] never_drop;
 
     public int getDropLowest() {
         return drop_lowest;

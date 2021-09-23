@@ -1,10 +1,10 @@
 package org.atom.linx.data;
 
 public class HelpLinks {
-    public String help_link_name;
-    public String help_link_icon;
-    public HelpLink[] custom_help_links;
-    public HelpLink[] default_help_links;
+    protected String help_link_name;
+    protected String help_link_icon;
+    protected HelpLink[] custom_help_links;
+    protected HelpLink[] default_help_links;
 
     public String getHelpLinkName() {
         return help_link_name;

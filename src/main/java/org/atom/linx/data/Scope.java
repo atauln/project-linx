@@ -1,12 +1,12 @@
 package org.atom.linx.data;
 
 public class Scope {
-    public String resource;
-    public String resource_name;
-    public String controller;
-    public String action;
-    public String verb;
-    public String scope;
+    protected String resource;
+    protected String resource_name;
+    protected String controller;
+    protected String action;
+    protected String verb;
+    protected String scope;
 
     public String getResource() {
         return resource;

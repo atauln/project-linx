@@ -1,11 +1,11 @@
 package org.atom.linx.data;
 
 public class Grades {
-    public String html_url;
-    public int current_score;
-    public Object current_grade;
-    public double final_score;
-    public Object final_grade;
+    protected String html_url;
+    protected int current_score;
+    protected Object current_grade;
+    protected double final_score;
+    protected Object final_grade;
 
     public String getHtmlUrl() {
         return html_url;

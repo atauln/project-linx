@@ -3,9 +3,9 @@ package org.atom.linx.data;
 import java.util.Date;
 
 class ReservedTime {
-    public int id;
-    public Date start_at;
-    public Date end_at;
+    protected int id;
+    protected Date start_at;
+    protected Date end_at;
 
     public int getId() {
         return id;
@@ -33,31 +33,31 @@ class ReservedTime {
 }
 
 public class AppointmentGroup {
-    public int id;
-    public String title;
-    public Date start_at;
-    public Date end_at;
-    public String description;
-    public String location_name;
-    public String location_address;
-    public int participant_count;
-    public ReservedTime[] reserved_times;
-    public String[] context_codes;
-    public String[] sub_context_codes;
-    public String workflow_state;
-    public boolean requiring_action;
-    public int appointments_count;
-    public Appointment[] appointments;
-    public Appointment[] new_appointments;
-    public int max_appointments_per_participant;
-    public int min_appointments_per_participant;
-    public int participants_per_appointment;
-    public String participant_visibility;
-    public String participant_type;
-    public String url;
-    public String html_url;
-    public Date created_at;
-    public Date updated_at;
+    protected int id;
+    protected String title;
+    protected Date start_at;
+    protected Date end_at;
+    protected String description;
+    protected String location_name;
+    protected String location_address;
+    protected int participant_count;
+    protected ReservedTime[] reserved_times;
+    protected String[] context_codes;
+    protected String[] sub_context_codes;
+    protected String workflow_state;
+    protected boolean requiring_action;
+    protected int appointments_count;
+    protected Appointment[] appointments;
+    protected Appointment[] new_appointments;
+    protected int max_appointments_per_participant;
+    protected int min_appointments_per_participant;
+    protected int participants_per_appointment;
+    protected String participant_visibility;
+    protected String participant_type;
+    protected String url;
+    protected String html_url;
+    protected Date created_at;
+    protected Date updated_at;
 
     public int getId() {
         return id;

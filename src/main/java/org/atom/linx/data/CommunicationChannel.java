@@ -1,12 +1,12 @@
 package org.atom.linx.data;
 
 public class CommunicationChannel {
-    private int id;
-    private String address;
-    private String type;
-    private int position;
-    private int user_id;
-    private String workflow_state;
+    protected int id;
+    protected String address;
+    protected String type;
+    protected int position;
+    protected int user_id;
+    protected String workflow_state;
 
     public int getId() {
         return id;

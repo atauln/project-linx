@@ -1,9 +1,9 @@
 package org.atom.linx.data;
 
 public class AssignmentExtension {
-    public int assignment_id;
-    public int user_id;
-    public int extra_attempts;
+    protected int assignment_id;
+    protected int user_id;
+    protected int extra_attempts;
 
     public int getAssignmentId() {
         return assignment_id;

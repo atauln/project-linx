@@ -3,7 +3,7 @@ package org.atom.linx.data;
 import java.util.Date;
 
 class Attachment {
-    private String url;
+    protected String url;
 
     public String getUrl() {
         return url;
@@ -15,13 +15,13 @@ class Attachment {
 }
 
 public class ContentExport {
-    private int id;
-    private Date created_at;
-    private String export_type;
-    private Attachment attachment;
-    private String progress_url;
-    private int user_id;
-    private String workflow_state;
+    protected int id;
+    protected Date created_at;
+    protected String export_type;
+    protected Attachment attachment;
+    protected String progress_url;
+    protected int user_id;
+    protected String workflow_state;
 
     public int getId() {
         return id;

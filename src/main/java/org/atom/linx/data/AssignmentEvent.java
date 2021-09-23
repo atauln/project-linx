@@ -3,22 +3,22 @@ package org.atom.linx.data;
 import java.util.Date;
 
 public class AssignmentEvent {
-    private String id;
-    private String title;
-    private Date start_at;
-    private Date end_at;
-    private String description;
-    private String context_code;
-    private String workflow_state;
-    private String url;
-    private String html_url;
-    private String all_day_date;
-    private boolean all_day;
-    private Date created_at;
-    private Date updated_at;
-    private Assignment assignment;
-    private AssignmentOverride assignment_overrides;
-    private boolean important_dates;
+    protected String id;
+    protected String title;
+    protected Date start_at;
+    protected Date end_at;
+    protected String description;
+    protected String context_code;
+    protected String workflow_state;
+    protected String url;
+    protected String html_url;
+    protected String all_day_date;
+    protected boolean all_day;
+    protected Date created_at;
+    protected Date updated_at;
+    protected Assignment assignment;
+    protected AssignmentOverride assignment_overrides;
+    protected boolean important_dates;
 
     public String getId() {
         return id;

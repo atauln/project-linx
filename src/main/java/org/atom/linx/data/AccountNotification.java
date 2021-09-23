@@ -3,13 +3,13 @@ package org.atom.linx.data;
 import java.util.Date;
 
 public class AccountNotification {
-    public String subject;
-    public String message;
-    public Date start_at;
-    public Date end_at;
-    public String icon;
-    public String[] roles;
-    public int[] role_ids;
+    protected String subject;
+    protected String message;
+    protected Date start_at;
+    protected Date end_at;
+    protected String icon;
+    protected String[] roles;
+    protected int[] role_ids;
 
     public String getSubject() {
         return subject;

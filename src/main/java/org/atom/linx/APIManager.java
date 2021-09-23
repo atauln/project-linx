@@ -1,8 +1,24 @@
 package org.atom.linx;
 import java.io.*;import java.net.HttpURLConnection;import java.net.URL;import java.util.HashMap;import java.util.Map;import java.util.Scanner;
 public class APIManager {
-    public static String apiKey = "7570~jASS1xRgyY56FF2POaQKBnVakkJEaIcjYTD4fXRglpYZACcZXuygafBuiNPNBvyb";
-    public static String domain = "boone";
+    protected static String apiKey;
+    protected static String domain;
+
+    public static String getApiKey() {
+        return apiKey;
+    }
+
+    public static void setApiKey(String apiKey) {
+        APIManager.apiKey = apiKey;
+    }
+
+    public static String getDomain() {
+        return domain;
+    }
+
+    public static void setDomain(String domain) {
+        APIManager.domain = domain;
+    }
 
     public static String GET(String shortenedURL, HashMap<String, String> args) {
         try {

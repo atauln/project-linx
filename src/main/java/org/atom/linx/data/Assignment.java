@@ -3,11 +3,11 @@ package org.atom.linx.data;
 import java.util.Date;
 
 class LockInfo {
-    private String asset_string;
-    private Date unlock_at;
-    private Date lock_at;
-    private String context_module;
-    private boolean manually_locked;
+    protected String asset_string;
+    protected Date unlock_at;
+    protected Date lock_at;
+    protected String context_module;
+    protected boolean manually_locked;
 
     public String getAssetString() {
         return asset_string;
@@ -51,9 +51,9 @@ class LockInfo {
 }
 
 class ExternalToolTagAttributes {
-    private String url;
-    private boolean new_tab;
-    private String resource_link_id;
+    protected String url;
+    protected boolean new_tab;
+    protected String resource_link_id;
 
     public String getUrl() {
         return url;
@@ -81,9 +81,9 @@ class ExternalToolTagAttributes {
 }
 
 class ScoreStatistic {
-    private int max;
-    private int mean;
-    private int min;
+    protected int max;
+    protected int mean;
+    protected int min;
 
     public int getMax() {
         return max;
@@ -111,14 +111,14 @@ class ScoreStatistic {
 }
 
 class TurnitinSettings {
-    private String originality_report_visibility;
-    private boolean s_paper_check;
-    private boolean internet_check;
-    private boolean journal_check;
-    private boolean exclude_biblio;
-    private boolean exclude_quoted;
-    private String exclude_small_matches_type;
-    private int exclude_small_matches_value;
+    protected String originality_report_visibility;
+    protected boolean s_paper_check;
+    protected boolean internet_check;
+    protected boolean journal_check;
+    protected boolean exclude_biblio;
+    protected boolean exclude_quoted;
+    protected String exclude_small_matches_type;
+    protected int exclude_small_matches_value;
 
     public String getOriginalityReportVisibility() {
         return originality_report_visibility;
@@ -186,8 +186,8 @@ class TurnitinSettings {
 }
 
 class NeedsGradingCountBySection{
-    private String section_id;
-    private int needs_grading_count;
+    protected String section_id;
+    protected int needs_grading_count;
 
     public String getSectionId() {
         return section_id;
@@ -207,75 +207,75 @@ class NeedsGradingCountBySection{
 }
 
 public class Assignment {
-    private int id;
-    private String name;
-    private String description;
-    private Date created_at;
-    private Date updated_at;
-    private Date due_at;
-    private Date lock_at;
-    private Date unlock_at;
-    private boolean has_overrides;
-    private Object all_dates;
-    private int course_id;
-    private String html_url;
-    private String submissions_download_url;
-    private int assignment_group_id;
-    private boolean due_date_required;
-    private String[] allowed_extensions;
-    private int max_name_length;
-    private boolean turnitin_enabled;
-    private boolean vericite_enabled;
-    private TurnitinSettings turnitin_settings;
-    private boolean grade_group_students_individually;
-    private ExternalToolTagAttributes external_tool_tag_attributes;
-    private boolean peer_reviews;
-    private boolean automatic_peer_reviews;
-    private int peer_review_count;
-    private Date peer_reviews_assign_at;
-    private boolean intra_group_peer_reviews;
-    private int group_category_id;
-    private int needs_grading_count;
-    private NeedsGradingCountBySection[] needs_grading_count_by_section;
-    private int position;
-    private boolean post_to_sis;
-    private String integration_id;
-    private Object integration_data;
-    private double points_possible;
-    private String[] submission_types;
-    private boolean has_submitted_submissions;
-    private String grading_type;
-    private Object grading_standard_id;
-    private boolean published;
-    private boolean unpublishable;
-    private boolean only_visible_to_overrides;
-    private boolean locked_for_user;
-    private LockInfo lock_info;
-    private String lock_explanation;
-    private int quiz_id;
-    private boolean anonymous_submissions;
-    private DiscussionTopic discussion_topic;
-    private boolean freeze_on_copy;
-    private boolean frozen;
-    private String[] frozen_attributes;
-    private Object submission; //TODO submission object
-    private boolean use_rubric_for_grading;
-    private String rubric_settings;
-    private Object rubric; //TODO rubric object
-    private int[] assignment_visibility;
-    private AssignmentOverride[] overrides;
-    private boolean omit_from_final_grade;
-    private boolean moderated_grading;
-    private int grader_count;
-    private int final_grader_id;
-    private boolean grader_comments_visible_to_graders;
-    private boolean graders_anonymous_to_graders;
-    private boolean grader_names_visible_to_final_grader;
-    private boolean anonymous_grading;
-    private int allowed_attempts;
-    private boolean post_manually;
-    private ScoreStatistic score_statistics;
-    private boolean can_submit;
+    protected int id;
+    protected String name;
+    protected String description;
+    protected Date created_at;
+    protected Date updated_at;
+    protected Date due_at;
+    protected Date lock_at;
+    protected Date unlock_at;
+    protected boolean has_overrides;
+    protected Object all_dates;
+    protected int course_id;
+    protected String html_url;
+    protected String submissions_download_url;
+    protected int assignment_group_id;
+    protected boolean due_date_required;
+    protected String[] allowed_extensions;
+    protected int max_name_length;
+    protected boolean turnitin_enabled;
+    protected boolean vericite_enabled;
+    protected TurnitinSettings turnitin_settings;
+    protected boolean grade_group_students_individually;
+    protected ExternalToolTagAttributes external_tool_tag_attributes;
+    protected boolean peer_reviews;
+    protected boolean automatic_peer_reviews;
+    protected int peer_review_count;
+    protected Date peer_reviews_assign_at;
+    protected boolean intra_group_peer_reviews;
+    protected int group_category_id;
+    protected int needs_grading_count;
+    protected NeedsGradingCountBySection[] needs_grading_count_by_section;
+    protected int position;
+    protected boolean post_to_sis;
+    protected String integration_id;
+    protected Object integration_data;
+    protected double points_possible;
+    protected String[] submission_types;
+    protected boolean has_submitted_submissions;
+    protected String grading_type;
+    protected Object grading_standard_id;
+    protected boolean published;
+    protected boolean unpublishable;
+    protected boolean only_visible_to_overrides;
+    protected boolean locked_for_user;
+    protected LockInfo lock_info;
+    protected String lock_explanation;
+    protected int quiz_id;
+    protected boolean anonymous_submissions;
+    protected DiscussionTopic discussion_topic;
+    protected boolean freeze_on_copy;
+    protected boolean frozen;
+    protected String[] frozen_attributes;
+    protected Object submission; //TODO submission object
+    protected boolean use_rubric_for_grading;
+    protected String rubric_settings;
+    protected Object rubric; //TODO rubric object
+    protected int[] assignment_visibility;
+    protected AssignmentOverride[] overrides;
+    protected boolean omit_from_final_grade;
+    protected boolean moderated_grading;
+    protected int grader_count;
+    protected int final_grader_id;
+    protected boolean grader_comments_visible_to_graders;
+    protected boolean graders_anonymous_to_graders;
+    protected boolean grader_names_visible_to_final_grader;
+    protected boolean anonymous_grading;
+    protected int allowed_attempts;
+    protected boolean post_manually;
+    protected ScoreStatistic score_statistics;
+    protected boolean can_submit;
 
     public int getId() {
         return id;

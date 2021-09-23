@@ -1,10 +1,10 @@
 package org.atom.linx.data;
 
 public class Admin {
-    public int id;
-    public String role;
-    public Object user;
-    public String workflow_state;
+    protected int id;
+    protected String role;
+    protected Object user;
+    protected String workflow_state;
 
     public int getId() {
         return id;

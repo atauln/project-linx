@@ -3,24 +3,24 @@ package org.atom.linx.data;
 import java.util.Date;
 
 class ReportParameters {
-    public int enrollment_term_id;
-    public boolean include_deleted;
-    public int course_id;
-    public String order;
-    public boolean users;
-    public boolean accounts;
-    public boolean terms;
-    public boolean courses;
-    public boolean sections;
-    public boolean enrollments;
-    public boolean groups;
-    public boolean xlist;
-    public int sis_terms_csv;
-    public int sis_accounts_csv;
-    public boolean include_enrollment_state;
-    public String[] enrollment_state;
-    public Date start_at;
-    public Date end_at;
+    protected int enrollment_term_id;
+    protected boolean include_deleted;
+    protected int course_id;
+    protected String order;
+    protected boolean users;
+    protected boolean accounts;
+    protected boolean terms;
+    protected boolean courses;
+    protected boolean sections;
+    protected boolean enrollments;
+    protected boolean groups;
+    protected boolean xlist;
+    protected int sis_terms_csv;
+    protected int sis_accounts_csv;
+    protected boolean include_enrollment_state;
+    protected String[] enrollment_state;
+    protected Date start_at;
+    protected Date end_at;
 
     public int getEnrollmentTermId() {
         return enrollment_term_id;
@@ -168,17 +168,17 @@ class ReportParameters {
 }
 
 public class Report {
-    public int id;
-    public String report;
-    public String file_url;
-    public Object attachment;
-    public String status;
-    public Date created_at;
-    public Date started_at;
-    public Date ended_at;
-    public ReportParameters parameters;
-    public int progress;
-    public int current_line;
+    protected int id;
+    protected String report;
+    protected String file_url;
+    protected Object attachment;
+    protected String status;
+    protected Date created_at;
+    protected Date started_at;
+    protected Date ended_at;
+    protected ReportParameters parameters;
+    protected int progress;
+    protected int current_line;
 
     public int getId() {
         return id;

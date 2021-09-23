@@ -2,7 +2,7 @@ package org.atom.linx.data;
 import java.util.Date;
 
 class WikiPage{
-    private boolean content;
+    protected boolean content;
     public boolean isContent() {
         return content;
     }
@@ -13,8 +13,8 @@ class WikiPage{
 }
 
 class BlueprintRestrictionsByObjectType{
-    private Assignment assignment;
-    private WikiPage wiki_page;
+    protected Assignment assignment;
+    protected WikiPage wiki_page;
     public Assignment getAssignment() {
         return assignment;
     }
@@ -33,56 +33,56 @@ class BlueprintRestrictionsByObjectType{
 }
 
 public class Course{
-    private int id;
-    private Object sis_course_id;
-    private String uuid;
-    private Object integration_id;
-    private int sis_import_id;
-    private String name;
-    private String course_code;
-    private String workflow_state;
-    private int account_id;
-    private int root_account_id;
-    private int enrollment_term_id;
-    private Object grading_periods;
-    private int grading_standard_id;
-    private String grade_passback_setting;
-    private Date created_at;
-    private Date start_at;
-    private Date end_at;
-    private String locale;
-    private Object enrollments;
-    private int total_students;
-    private Object calendar;
-    private String default_view;
-    private String syllabus_body;
-    private int needs_grading_count;
-    private Object term;
-    private Object course_progress;
-    private boolean apply_assignment_group_weights;
-    private Permissions permissions;
-    private boolean is_public;
-    private boolean is_public_to_auth_users;
-    private boolean public_syllabus;
-    private boolean public_syllabus_to_auth;
-    private String public_description;
-    private int storage_quota_mb;
-    private int storage_quota_used_mb;
-    private boolean hide_final_grades;
-    private String license;
-    private boolean allow_student_assignment_edits;
-    private boolean allow_wiki_comments;
-    private boolean allow_student_forum_attachments;
-    private boolean open_enrollment;
-    private boolean self_enrollment;
-    private boolean restrict_enrollments_to_course_dates;
-    private String course_format;
-    private boolean access_restricted_by_date;
-    private String time_zone;
-    private boolean blueprint;
-    private BlueprintRestriction[] blueprint_restrictions;
-    private BlueprintRestrictionsByObjectType blueprint_restrictions_by_object_type;
-    private boolean template;
+    protected int id;
+    protected Object sis_course_id;
+    protected String uuid;
+    protected Object integration_id;
+    protected int sis_import_id;
+    protected String name;
+    protected String course_code;
+    protected String workflow_state;
+    protected int account_id;
+    protected int root_account_id;
+    protected int enrollment_term_id;
+    protected Object grading_periods;
+    protected int grading_standard_id;
+    protected String grade_passback_setting;
+    protected Date created_at;
+    protected Date start_at;
+    protected Date end_at;
+    protected String locale;
+    protected Object enrollments;
+    protected int total_students;
+    protected Object calendar;
+    protected String default_view;
+    protected String syllabus_body;
+    protected int needs_grading_count;
+    protected Object term;
+    protected Object course_progress;
+    protected boolean apply_assignment_group_weights;
+    protected Permissions permissions;
+    protected boolean is_public;
+    protected boolean is_public_to_auth_users;
+    protected boolean public_syllabus;
+    protected boolean public_syllabus_to_auth;
+    protected String public_description;
+    protected int storage_quota_mb;
+    protected int storage_quota_used_mb;
+    protected boolean hide_final_grades;
+    protected String license;
+    protected boolean allow_student_assignment_edits;
+    protected boolean allow_wiki_comments;
+    protected boolean allow_student_forum_attachments;
+    protected boolean open_enrollment;
+    protected boolean self_enrollment;
+    protected boolean restrict_enrollments_to_course_dates;
+    protected String course_format;
+    protected boolean access_restricted_by_date;
+    protected String time_zone;
+    protected boolean blueprint;
+    protected BlueprintRestriction[] blueprint_restrictions;
+    protected BlueprintRestrictionsByObjectType blueprint_restrictions_by_object_type;
+    protected boolean template;
 
     public String toString() {
         String s = "";

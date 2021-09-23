@@ -1,12 +1,12 @@
 package org.atom.linx.data;
 
 public class TermsOfService {
-    public int id;
-    public String terms_type;
-    public boolean passive;
-    public int account_id;
-    public String content;
-    public String[] self_registration_type;
+    protected int id;
+    protected String terms_type;
+    protected boolean passive;
+    protected int account_id;
+    protected String content;
+    protected String[] self_registration_type;
 
     public int getId() {
         return id;

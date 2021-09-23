@@ -6,9 +6,9 @@ class UploadParams { //TODO file:file_uploads.html File Upload Documentation
 }
 
 class PreAttachment {
-    private String upload_url;
-    private String message;
-    private UploadParams upload_params;
+    protected String upload_url;
+    protected String message;
+    protected UploadParams upload_params;
 
     public String getUploadUrl() {
         return upload_url;
@@ -36,17 +36,17 @@ class PreAttachment {
 }
 
 public class ContentMigration {
-    private int id;
-    private String migration_type;
-    private String migration_type_title;
-    private String migration_issues_url;
-    private Attachment attachment;
-    private String progress_url;
-    private int user_id;
-    private String workflow_state;
-    private Date started_at;
-    private Date finished_at;
-    private PreAttachment pre_attachment;
+    protected int id;
+    protected String migration_type;
+    protected String migration_type_title;
+    protected String migration_issues_url;
+    protected Attachment attachment;
+    protected String progress_url;
+    protected int user_id;
+    protected String workflow_state;
+    protected Date started_at;
+    protected Date finished_at;
+    protected PreAttachment pre_attachment;
 
     public int getId() {
         return id;

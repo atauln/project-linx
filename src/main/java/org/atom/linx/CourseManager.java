@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 public class CourseManager {
     public static Course[] listCourses() {
-        String r = APIManager.GET("/api/v1/courses", new RequestMap());
+        String r = APIManager.GET("/api/v1/courses", new SearchQuery());
         Course[] courses = new Gson().fromJson(r, Course[].class);
         List<Course> result = new ArrayList<>();
         for (Course c : courses) {
@@ -18,7 +18,7 @@ public class CourseManager {
     }
 
     public static Course[] listCourses(String user_id) {
-        String r = APIManager.GET("/api/v1/" + user_id + "/courses", new RequestMap());
+        String r = APIManager.GET("/api/v1/" + user_id + "/courses", new SearchQuery());
         Course[] courses = new Gson().fromJson(r, Course[].class);
         List<Course> result = new ArrayList<>();
         for (Course c : courses) {
@@ -30,12 +30,12 @@ public class CourseManager {
     }
 
     public static CourseProgress getCourseProgress(int course_id) {
-        String r = APIManager.GET("/api/v1/courses/" + course_id + "/users/self/progress", new RequestMap());
+        String r = APIManager.GET("/api/v1/courses/" + course_id + "/users/self/progress", new SearchQuery());
         return new Gson().fromJson(r, CourseProgress.class);
     }
 
     public static CourseProgress getCourseProgress(int course_id, int user_id) {
-        String r = APIManager.GET("/api/v1/courses/" + course_id + "/users/" + user_id + "/progress", new RequestMap());
+        String r = APIManager.GET("/api/v1/courses/" + course_id + "/users/" + user_id + "/progress", new SearchQuery());
         return new Gson().fromJson(r, CourseProgress.class);
     }
 
@@ -43,31 +43,31 @@ public class CourseManager {
     //TODO POST /api/v1/courses/:course_id/files
 
     public static User[] listStudents(int course_id) {
-        String r = APIManager.GET("/api/v1/courses/" + course_id + "/students", new RequestMap());
+        String r = APIManager.GET("/api/v1/courses/" + course_id + "/students", new SearchQuery());
         return new Gson().fromJson(r, User[].class);
     }
 
     public static User[] listUsers(int course_id) {
-        String r = APIManager.GET("/api/v1/courses/" + course_id + "/users", new RequestMap());
+        String r = APIManager.GET("/api/v1/courses/" + course_id + "/users", new SearchQuery());
         return new Gson().fromJson(r, User[].class);
     }
 
-    public static User[] listUsers(int course_id, RequestMap query) {
+    public static User[] listUsers(int course_id, SearchQuery query) {
         String r = APIManager.GET("/api/v1/courses/" + course_id + "/users", query);
         return new Gson().fromJson(r, User[].class);
     }
 
     public static User[] listRecentStudents(int course_id) {
-        String r = APIManager.GET("/api/v1/courses/" + course_id + "/recent_students", new RequestMap());
+        String r = APIManager.GET("/api/v1/courses/" + course_id + "/recent_students", new SearchQuery());
         return new Gson().fromJson(r, User[].class);
     }
 
     public static User getUser(int course_id, int user_id) {
-        String r = APIManager.GET("/api/v1/courses/" + course_id + "/users/" + user_id, new RequestMap());
+        String r = APIManager.GET("/api/v1/courses/" + course_id + "/users/" + user_id, new SearchQuery());
         return new Gson().fromJson(r, User.class);
     }
 
-    public static User[] listContentShareUsers(int course_id, RequestMap query) {
+    public static User[] listContentShareUsers(int course_id, SearchQuery query) {
         String r = APIManager.GET("/api/v1/courses/" + course_id + "/content_share_users", query);
         return new Gson().fromJson(r, User[].class);
     }
@@ -75,17 +75,17 @@ public class CourseManager {
     //TODO POST /api/v1/courses/:course_id/preview_html
 
     public static JsonObject[] getCourseActivityStream(int course_id) {
-        String r = APIManager.GET("/api/v1/courses/" + course_id + "/activity_stream", new RequestMap());
+        String r = APIManager.GET("/api/v1/courses/" + course_id + "/activity_stream", new SearchQuery());
         return new Gson().fromJson(r, JsonObject[].class);
     }
 
     public static JsonObject[] getCourseActivityStreamSummary(int course_id) {
-        String r = APIManager.GET("/api/v1/courses/" + course_id + "/activity_stream/summary", new RequestMap());
+        String r = APIManager.GET("/api/v1/courses/" + course_id + "/activity_stream/summary", new SearchQuery());
         return new Gson().fromJson(r, JsonObject[].class);
     }
 
     public static JsonObject[] getCourseTODOItems(int course_id) {
-        String r = APIManager.GET("/api/v1/courses/" + course_id + "/todo", new RequestMap());
+        String r = APIManager.GET("/api/v1/courses/" + course_id + "/todo", new SearchQuery());
         return new Gson().fromJson(r, JsonObject[].class);
     }
 
@@ -93,12 +93,12 @@ public class CourseManager {
     //TODO PUT /api/v1/courses/:course_id/settings
 
     public static User getTestStudent(int course_id) {
-        String r = APIManager.GET("/api/v1/courses/" + course_id + "/student_view_student", new RequestMap());
+        String r = APIManager.GET("/api/v1/courses/" + course_id + "/student_view_student", new SearchQuery());
         return new Gson().fromJson(r, User.class);
     }
 
     public static Course getCourse(int course_id) {
-        String r = APIManager.GET("/api/v1/courses/" + course_id, new RequestMap());
+        String r = APIManager.GET("/api/v1/courses/" + course_id, new SearchQuery());
         return new Gson().fromJson(r, Course.class);
     }
 
@@ -107,17 +107,17 @@ public class CourseManager {
     //TODO POST /api/v1/courses/:course_id/reset_content
 
     public static Permissions getPermissions(int course_id) {
-        String r = APIManager.GET("/api/v1/courses/" + course_id + "/permissions", new RequestMap());
+        String r = APIManager.GET("/api/v1/courses/" + course_id + "/permissions", new SearchQuery());
         return new Gson().fromJson(r, Permissions.class);
     }
 
     public static JsonObject[] getBulkUserProgress(int course_id) {
-        String r = APIManager.GET("/api/v1/courses/" + course_id + "/bulk_user_progress", new RequestMap());
+        String r = APIManager.GET("/api/v1/courses/" + course_id + "/bulk_user_progress", new SearchQuery());
         return new Gson().fromJson(r, JsonObject[].class);
     }
 
     public static JsonObject getCourseCopyStatus(int course_id, int id) {
-        String r = APIManager.GET("/api/v1/courses/" + course_id + "/course_copy/" + id, new RequestMap());
+        String r = APIManager.GET("/api/v1/courses/" + course_id + "/course_copy/" + id, new SearchQuery());
         return new Gson().fromJson(r, JsonObject.class);
     }
 

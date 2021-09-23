@@ -1,10 +1,10 @@
 package org.atom.linx.data;
 
 public class BlueprintRestriction {
-    private boolean content;
-    private boolean points;
-    private boolean due_dates;
-    private boolean availability_dates;
+    protected boolean content;
+    protected boolean points;
+    protected boolean due_dates;
+    protected boolean availability_dates;
 
     public boolean isContent() {
         return content;

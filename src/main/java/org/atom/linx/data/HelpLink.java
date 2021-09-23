@@ -1,15 +1,15 @@
 package org.atom.linx.data;
 
 public class HelpLink {
-    public String[] available_to;
-    public String text;
-    public String subtext;
-    public String url;
-    public String type;
-    public String id;
-    public boolean is_featured;
-    public boolean is_new;
-    public String feature_headline;
+    protected String[] available_to;
+    protected String text;
+    protected String subtext;
+    protected String url;
+    protected String type;
+    protected String id;
+    protected boolean is_featured;
+    protected boolean is_new;
+    protected String feature_headline;
 
     public String[] getAvailableTo() {
         return available_to;

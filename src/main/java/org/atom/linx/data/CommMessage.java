@@ -3,17 +3,17 @@ package org.atom.linx.data;
 import java.util.Date;
 
 public class CommMessage {
-    private int id;
-    private Date created_at;
-    private Date sent_at;
-    private String workflow_state;
-    private String from;
-    private String from_name;
-    private String to;
-    private String reply_to;
-    private String subject;
-    private String body;
-    private String html_body;
+    protected int id;
+    protected Date created_at;
+    protected Date sent_at;
+    protected String workflow_state;
+    protected String from;
+    protected String from_name;
+    protected String to;
+    protected String reply_to;
+    protected String subject;
+    protected String body;
+    protected String html_body;
 
     public int getId() {
         return id;

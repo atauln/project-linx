@@ -3,10 +3,10 @@ package org.atom.linx.data;
 import java.util.Date;
 
 class Sender{
-    private int id;
-    private String display_name;
-    private String avatar_image_url;
-    private String html_url;
+    protected int id;
+    protected String display_name;
+    protected String avatar_image_url;
+    protected String html_url;
 
     public int getId() {
         return id;
@@ -42,10 +42,10 @@ class Sender{
 }
 
 class Receiver{
-    private int id;
-    private String display_name;
-    private String avatar_image_url;
-    private String html_url;
+    protected int id;
+    protected String display_name;
+    protected String avatar_image_url;
+    protected String html_url;
 
     public int getId() {
         return id;
@@ -81,8 +81,8 @@ class Receiver{
 }
 
 class SourceCourse{
-    private int id;
-    private String name;
+    protected int id;
+    protected String name;
 
     public int getId() {
         return id;
@@ -102,17 +102,17 @@ class SourceCourse{
 }
 
 public class ContentShare {
-    private int id;
-    private String name;
-    private String content_type;
-    private Date created_at;
-    private Date updated_at;
-    private int user_id;
-    private Sender sender;
-    private Receiver[] receivers;
-    private SourceCourse source_course;
-    private String read_state;
-    private ContentExport content_export;
+    protected int id;
+    protected String name;
+    protected String content_type;
+    protected Date created_at;
+    protected Date updated_at;
+    protected int user_id;
+    protected Sender sender;
+    protected Receiver[] receivers;
+    protected SourceCourse source_course;
+    protected String read_state;
+    protected ContentExport content_export;
 
     public int getId() {
         return id;

@@ -1,10 +1,10 @@
 package org.atom.linx.data;
 
 public class Migrator {
-    private String type;
-    private boolean requires_file_upload;
-    private String name;
-    private String[] required_settings;
+    protected String type;
+    protected boolean requires_file_upload;
+    protected String name;
+    protected String[] required_settings;
 
     public String getType() {
         return type;

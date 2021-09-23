@@ -3,17 +3,17 @@ package org.atom.linx.data;
 import java.util.Date;
 
 public class AssignmentOverride {
-    private int id;
-    private int assignment_id;
-    private int[] student_ids;
-    private int group_id;
-    private int course_section_id;
-    private String title;
-    private Date due_at;
-    private boolean all_day;
-    private String all_day_date;
-    private Date unlock_at;
-    private Date lock_at;
+    protected int id;
+    protected int assignment_id;
+    protected int[] student_ids;
+    protected int group_id;
+    protected int course_section_id;
+    protected String title;
+    protected Date due_at;
+    protected boolean all_day;
+    protected String all_day_date;
+    protected Date unlock_at;
+    protected Date lock_at;
 
     public int getId() {
         return id;

@@ -1,7 +1,7 @@
 package org.atom.linx.data;
 public class Permissions {
-    private boolean create_discussion_topic;
-    private boolean create_announcement;
+    protected boolean create_discussion_topic;
+    protected boolean create_announcement;
     public boolean attach;
 
     public boolean isAttach() {

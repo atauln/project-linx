@@ -3,9 +3,9 @@ package org.atom.linx.data;
 import java.util.Date;
 
 public class Appointment {
-    public int id;
-    public Date start_at;
-    public Date end_at;
+    protected int id;
+    protected Date start_at;
+    protected Date end_at;
 
     public int getId() {
         return id;

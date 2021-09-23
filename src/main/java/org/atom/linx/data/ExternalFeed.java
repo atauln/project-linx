@@ -3,12 +3,12 @@ package org.atom.linx.data;
 import java.util.Date;
 
 public class ExternalFeed {
-    public int id;
-    public String display_name;
-    public String url;
-    public String header_match;
-    public Date created_at;
-    public String verbosity;
+    protected int id;
+    protected String display_name;
+    protected String url;
+    protected String header_match;
+    protected Date created_at;
+    protected String verbosity;
 
     public int getId() {
         return id;

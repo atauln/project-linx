@@ -1,10 +1,10 @@
 package org.atom.linx.data;
 
 public class SSOSettings {
-    private String login_handle_name;
-    private String change_password_url;
-    private String auth_discovery_url;
-    private String unknown_user_url;
+    protected String login_handle_name;
+    protected String change_password_url;
+    protected String auth_discovery_url;
+    protected String unknown_user_url;
 
     public String getLoginHandleName() {
         return login_handle_name;

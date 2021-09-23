@@ -1,26 +1,26 @@
 package org.atom.linx.data;
 
 public class AuthenticationProvider {
-    private String identifier_format;
-    private String auth_type;
-    private int id;
-    private String log_out_url;
-    private String log_in_url;
-    private String certificate_fingerprint;
-    private Object requested_authn_context;
-    private String auth_host;
-    private String auth_filter;
-    private Object auth_over_tls;
-    private Object auth_base;
-    private String auth_username;
-    private Object auth_port;
-    private int position;
-    private String idp_entity_id;
-    private String login_attribute;
-    private String sig_alg;
-    private Object jit_provisioning;
-    private Object federated_attributes;
-    private Object mfa_required;
+    protected String identifier_format;
+    protected String auth_type;
+    protected int id;
+    protected String log_out_url;
+    protected String log_in_url;
+    protected String certificate_fingerprint;
+    protected Object requested_authn_context;
+    protected String auth_host;
+    protected String auth_filter;
+    protected Object auth_over_tls;
+    protected Object auth_base;
+    protected String auth_username;
+    protected Object auth_port;
+    protected int position;
+    protected String idp_entity_id;
+    protected String login_attribute;
+    protected String sig_alg;
+    protected Object jit_provisioning;
+    protected Object federated_attributes;
+    protected Object mfa_required;
 
     public String getIdentifierFormat() {
         return identifier_format;

@@ -3,16 +3,16 @@ package org.atom.linx.data;
 import java.util.Date;
 
 public class MigrationIssue {
-    private int id;
-    private String content_migration_url;
-    private String description;
-    private String workflow_state;
-    private String fix_issue_html_url;
-    private String issue_type;
-    private String error_report_html_url;
-    private String error_message;
-    private Date created_at;
-    private Date updated_at;
+    protected int id;
+    protected String content_migration_url;
+    protected String description;
+    protected String workflow_state;
+    protected String fix_issue_html_url;
+    protected String issue_type;
+    protected String error_report_html_url;
+    protected String error_message;
+    protected Date created_at;
+    protected Date updated_at;
 
     public int getId() {
         return id;

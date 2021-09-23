@@ -3,11 +3,11 @@ package org.atom.linx.data;
 import java.util.Date;
 
 public class ConferenceRecording {
-    private int duration_minutes;
-    private String title;
-    private Date updated_at;
-    private Date created_at;
-    private String playback_url;
+    protected int duration_minutes;
+    protected String title;
+    protected Date updated_at;
+    protected Date created_at;
+    protected String playback_url;
 
     public int getDurationMinutes() {
         return duration_minutes;

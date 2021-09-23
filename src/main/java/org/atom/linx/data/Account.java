@@ -3,20 +3,20 @@ package org.atom.linx.data;
 import org.atom.linx.DataMasterclass;
 
 public class Account {
-    public int id;
-    public String name;
-    public String uuid;
-    public int parent_account_id;
-    public int root_account_id;
-    public int default_storage_quota_mb;
-    public int default_user_storage_quota_mb;
-    public int default_group_storage_quota_mb;
-    public String default_time_zone;
-    public String sis_account_id;
-    public String integration_id;
-    public int sis_import_id;
-    public String lti_guid;
-    public String workflow_state;
+    protected int id;
+    protected String name;
+    protected String uuid;
+    protected int parent_account_id;
+    protected int root_account_id;
+    protected int default_storage_quota_mb;
+    protected int default_user_storage_quota_mb;
+    protected int default_group_storage_quota_mb;
+    protected String default_time_zone;
+    protected String sis_account_id;
+    protected String integration_id;
+    protected int sis_import_id;
+    protected String lti_guid;
+    protected String workflow_state;
 
     public int getId() {
         return id;

@@ -3,27 +3,27 @@ package org.atom.linx.data;
 import java.util.Date;
 
 class UserSettings {
-    private boolean record;
+    protected boolean record;
 }
 
 public class Conference {
-    private int id;
-    private String conference_type;
-    private String conference_key;
-    private String description;
-    private int duration;
-    private Date ended_at;
-    private Date started_at;
-    private String title;
-    private int[] users;
-    private boolean has_advanced_settings;
-    private boolean long_running;
-    private UserSettings user_settings;
-    private ConferenceRecording[] recordings;
-    private String url;
-    private String join_url;
-    private Object context_type;
-    private Object context_id;
+    protected int id;
+    protected String conference_type;
+    protected String conference_key;
+    protected String description;
+    protected int duration;
+    protected Date ended_at;
+    protected Date started_at;
+    protected String title;
+    protected int[] users;
+    protected boolean has_advanced_settings;
+    protected boolean long_running;
+    protected UserSettings user_settings;
+    protected ConferenceRecording[] recordings;
+    protected String url;
+    protected String join_url;
+    protected Object context_type;
+    protected Object context_id;
 
     public int getId() {
         return id;

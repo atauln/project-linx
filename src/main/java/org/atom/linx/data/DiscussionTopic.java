@@ -3,8 +3,8 @@ package org.atom.linx.data;
 import java.util.Date;
 
 class GroupTopicChildren {
-    public int id;
-    public int group_id;
+    protected int id;
+    protected int group_id;
 
     public int getId() {
         return id;
@@ -24,40 +24,40 @@ class GroupTopicChildren {
 }
 
 public class DiscussionTopic {
-    public int id;
-    public String title;
-    public String message;
-    public String html_url;
-    public Date posted_at;
-    public Date last_reply_at;
-    public boolean require_initial_post;
-    public boolean user_can_see_posts;
-    public int discussion_subentry_count;
-    public String read_state;
-    public int unread_count;
-    public boolean subscribed;
-    public String subscription_hold;
-    public Object assignment_id;
-    public Object delayed_post_at;
-    public boolean published;
-    public Object lock_at;
-    public boolean locked;
-    public boolean pinned;
-    public boolean locked_for_user;
-    public Object lock_info;
-    public String lock_explanation;
-    public String user_name;
-    public int[] topic_children;
-    public GroupTopicChildren[] group_topic_children;
-    public Object root_topic_id;
-    public String podcast_url;
-    public String discussion_type;
-    public Object group_category_id;
-    public Object attachments;
-    public Permissions permissions;
-    public boolean allow_rating;
-    public boolean only_graders_can_rate;
-    public boolean sort_by_rating;
+    protected int id;
+    protected String title;
+    protected String message;
+    protected String html_url;
+    protected Date posted_at;
+    protected Date last_reply_at;
+    protected boolean require_initial_post;
+    protected boolean user_can_see_posts;
+    protected int discussion_subentry_count;
+    protected String read_state;
+    protected int unread_count;
+    protected boolean subscribed;
+    protected String subscription_hold;
+    protected Object assignment_id;
+    protected Object delayed_post_at;
+    protected boolean published;
+    protected Object lock_at;
+    protected boolean locked;
+    protected boolean pinned;
+    protected boolean locked_for_user;
+    protected Object lock_info;
+    protected String lock_explanation;
+    protected String user_name;
+    protected int[] topic_children;
+    protected GroupTopicChildren[] group_topic_children;
+    protected Object root_topic_id;
+    protected String podcast_url;
+    protected String discussion_type;
+    protected Object group_category_id;
+    protected Object attachments;
+    protected Permissions permissions;
+    protected boolean allow_rating;
+    protected boolean only_graders_can_rate;
+    protected boolean sort_by_rating;
 
     public int getId() {
         return id;

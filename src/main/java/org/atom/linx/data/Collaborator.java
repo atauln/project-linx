@@ -1,9 +1,9 @@
 package org.atom.linx.data;
 
 public class Collaborator {
-    private int id;
-    private String type;
-    private String name;
+    protected int id;
+    protected String type;
+    protected String name;
 
     public int getId() {
         return id;

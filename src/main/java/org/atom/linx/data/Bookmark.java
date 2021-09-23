@@ -1,7 +1,7 @@
 package org.atom.linx.data;
 
 class Data {
-    private int active_tab;
+    protected int active_tab;
 
     public int getActiveTab() {
         return active_tab;
@@ -13,11 +13,11 @@ class Data {
 }
 
 public class Bookmark {
-    private int id;
-    private String name;
-    private String url;
-    private int position;
-    private Data data;
+    protected int id;
+    protected String name;
+    protected String url;
+    protected int position;
+    protected Data data;
 
     public int getId() {
         return id;

@@ -1,8 +1,8 @@
 package org.atom.linx.data;
 
 class ExceptionRecord {
-    private int course_id;
-    private String[] conflicting_changes;
+    protected int course_id;
+    protected String[] conflicting_changes;
 
     public int getCourseId() {
         return course_id;
@@ -22,13 +22,13 @@ class ExceptionRecord {
 }
 
 public class ChangeRecord {
-    private int asset_id;
-    private String asset_type;
-    private String asset_name;
-    private String change_type;
-    private String html_url;
-    private boolean locked;
-    private ExceptionRecord[] exceptions;
+    protected int asset_id;
+    protected String asset_type;
+    protected String asset_name;
+    protected String change_type;
+    protected String html_url;
+    protected boolean locked;
+    protected ExceptionRecord[] exceptions;
 
     public int getAssetId() {
         return asset_id;

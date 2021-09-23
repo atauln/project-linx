@@ -1,20 +1,20 @@
 package org.atom.linx.data;
 public class User {
-    private Integer id;
-    private String name;
-    private String sortable_name;
-    private String short_name;
-    private String sis_user_id;
-    private Integer sis_import_id;
-    private String integration_id;
-    private String login_id;
-    private String avatar_url;
-    private Enrollment[] enrollments;
-    private String email;
-    private String locale;
-    private String last_login;
-    private String time_zone;
-    private String bio;
+    protected Integer id;
+    protected String name;
+    protected String sortable_name;
+    protected String short_name;
+    protected String sis_user_id;
+    protected Integer sis_import_id;
+    protected String integration_id;
+    protected String login_id;
+    protected String avatar_url;
+    protected Enrollment[] enrollments;
+    protected String email;
+    protected String locale;
+    protected String last_login;
+    protected String time_zone;
+    protected String bio;
     public String toString() {
         String s = "";        s += "Name: " + sortable_name;        s += "  Short Name: " + short_name;        s += "  ID: " + id;        return s;    }
 

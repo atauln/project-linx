@@ -1,12 +1,12 @@
 package org.atom.linx.data;
 
 public class LTIAccount {
-    public int id;
-    public String name;
-    public String uuid;
-    public int parent_account_id;
-    public int root_account_id;
-    public String workflow_state;
+    protected int id;
+    protected String name;
+    protected String uuid;
+    protected int parent_account_id;
+    protected int root_account_id;
+    protected String workflow_state;
 
     public int getId() {
         return id;

@@ -1,10 +1,10 @@
 package org.atom.linx.data;
 
 public class AccountDomain {
-    private String name;
-    private String domain;
-    private int distance;
-    private String authentication_provider;
+    protected String name;
+    protected String domain;
+    protected int distance;
+    protected String authentication_provider;
 
     public String getName() {
         return name;

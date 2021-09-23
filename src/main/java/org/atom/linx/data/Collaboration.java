@@ -3,20 +3,20 @@ package org.atom.linx.data;
 import java.util.Date;
 
 public class Collaboration {
-    private int id;
-    private String collaboration_type;
-    private String document_id;
-    private int user_id;
-    private int context_id;
-    private String context_type;
-    private String url;
-    private Date created_at;
-    private Date updated_at;
-    private String description;
-    private String title;
-    private String type;
-    private String update_url;
-    private String user_name;
+    protected int id;
+    protected String collaboration_type;
+    protected String document_id;
+    protected int user_id;
+    protected int context_id;
+    protected String context_type;
+    protected String url;
+    protected Date created_at;
+    protected Date updated_at;
+    protected String description;
+    protected String title;
+    protected String type;
+    protected String update_url;
+    protected String user_name;
 
     public int getId() {
         return id;

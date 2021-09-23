@@ -1,14 +1,14 @@
 package org.atom.linx.data;
 
 public class AssignmentGroup {
-    public int id;
-    public String name;
-    public int position;
-    public int group_weight;
-    public String sis_source_id;
-    public Object integration_data;
-    public Assignment[] assignments;
-    public Object rules;
+    protected int id;
+    protected String name;
+    protected int position;
+    protected int group_weight;
+    protected String sis_source_id;
+    protected Object integration_data;
+    protected Assignment[] assignments;
+    protected Object rules;
 
     public int getId() {
         return id;

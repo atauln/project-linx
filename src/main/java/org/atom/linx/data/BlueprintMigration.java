@@ -3,16 +3,16 @@ package org.atom.linx.data;
 import java.util.Date;
 
 public class BlueprintMigration {
-    private int id;
-    private int template_id;
-    private int subscription_id;
-    private int user_id;
-    private String workflow_state;
-    private Date created_at;
-    private Date exports_started_at;
-    private Date imports_queued_at;
-    private Date imports_completed_at;
-    private String comment;
+    protected int id;
+    protected int template_id;
+    protected int subscription_id;
+    protected int user_id;
+    protected String workflow_state;
+    protected Date created_at;
+    protected Date exports_started_at;
+    protected Date imports_queued_at;
+    protected Date imports_completed_at;
+    protected String comment;
 
     public int getId() {
         return id;
